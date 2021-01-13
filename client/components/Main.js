@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Navigation, Home, Projects, Photography, Biography } from './Index'
 
 class Main extends React.Component {
     render() {
         return (
-            <div className="hello">
-                Hi Kenneth Lai
-            </div>
+            <Fragment>
+                <Navigation />
+                <Home />
+                <Projects />
+                <Photography />
+                <Biography />
+            </Fragment>
         )
     }
 }

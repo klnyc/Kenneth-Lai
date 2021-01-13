@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-color: ghostwhite;
+    position: relative;
+}
+
+.navigation {
+    position: fixed;
+    color: darkgray;
+    background-color: transparent;
+    height: 200px;
+    top: calc((100vh - 200px)/2);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navigation-line {
+    cursor: pointer;
+}
+
+.navigation-line:hover {
+    color: black;
+}
+
+.navigation-line span {
+    font-size: 24px;
+    padding-right: 12px;
+}
+
+.home {
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}
