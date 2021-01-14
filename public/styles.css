@@ -5,7 +5,7 @@ body {
     position: relative;
 }
 
-.navigation {
+#navigation {
     position: fixed;
     color: darkgray;
     background-color: transparent;
@@ -30,7 +30,7 @@ body {
     padding-right: 12px;
 }
 
-.home {
+#home {
     height: 100vh;
     text-align: center;
     line-height: 100vh;
@@ -39,7 +39,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .navigation {
+    #navigation {
         display: none;
     }
 }
