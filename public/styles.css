@@ -100,12 +100,54 @@ body {
 }
 
 #photography {
-    height: 100vh;
     background-color: #000000b8;
+    position: relative;
 }
 
 #photography .section-name {
     color: ghostwhite;
+}
+
+#photography .button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 16px;
+    color: ghostwhite;
+    border: ghostwhite 1px solid;
+    font-size: 12px;
+    background-color: black;
+    height: 16px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 16px;
+}
+
+#photography .button:hover {
+    background-color: transparent;
+}
+
+#photo-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-row {
+    display: flex;
+}
+
+.photo {
+    flex: 1;
+    padding: 8px;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
 }
 
 .biography-summary {
