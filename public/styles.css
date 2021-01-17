@@ -31,6 +31,10 @@ body {
     text-decoration: none;
 }
 
+.navigation-line a:link {
+    color: lightslategray;
+}
+
 .navigation-line a:visited {
     color: inherit;
 }
