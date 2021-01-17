@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 2;
 }
 
 .navigation-line:hover {
@@ -36,14 +37,22 @@ body {
 
 #home {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #home-name {
+    text-align: center;
+    padding: 200px 0 20px;
     font-size: 40px;
     letter-spacing: 4px;
+}
+
+#home-links {
+    text-align: center;
+}
+
+#home-links img {
+    height: 22px;
+    padding: 0 10px;
 }
 
 #projects, #photography, #biography {
@@ -63,7 +72,7 @@ body {
 .project {
     height: 400px;
     display: flex;
-    padding: 20px 0;
+    padding: 20px 0 40px;
 }
 
 .project-image {
@@ -80,7 +89,7 @@ body {
 }
 
 .project-description {
-    flex: 1
+    flex: 1;
 }
 
 .project-title {
@@ -88,7 +97,7 @@ body {
     padding-bottom: 6px;
 }
 
-.project-summary, .project-technologies {
+.project-summary, .project-technologies, .biography-summary {
     padding: 6px 0;
     color: lightslategray;
     line-height: 28px;
@@ -97,6 +106,15 @@ body {
 
 .project-technologies {
     font-style: italic;
+}
+
+.project-links {
+    text-align: center;
+}
+
+.project-links img {
+    height: 30px;
+    padding: 6px 12px;
 }
 
 #photography {
@@ -150,7 +168,8 @@ body {
     pointer-events: none;
 }
 
-.biography-summary {
+#biography {
+    height: 100vh;
 }
 
 @media only screen and (max-width: 768px) {
