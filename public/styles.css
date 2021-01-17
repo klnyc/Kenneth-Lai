@@ -1,9 +1,12 @@
+html { 
+    scroll-behavior: smooth 
+}
+
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     background-color: ghostwhite;
     position: relative;
-    scroll-behavior: smooth;
 }
 
 a { text-decoration: none }
@@ -200,8 +203,21 @@ a:link, a:visited { color: inherit }
     color: black;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
     #navigation {
         display: none;
+    }
+
+    .project {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-image {
+        padding-bottom: 20px;
+    }
+
+    #projects, #photography, #biography {
+        padding: 20px 40px;
     }
 }
