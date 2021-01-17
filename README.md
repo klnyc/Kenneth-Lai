@@ -8,7 +8,8 @@ Technologies
 * HTML
 * CSS
 * Node.js
+* Firebase
 * Git
 
 ## :rocket: Deployment
-https://idestination.web.app/
+https://kenneth-lai.web.app/
