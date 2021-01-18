@@ -35,6 +35,9 @@ a:link, a:visited { color: inherit }
 
 #home {
     height: 100vh;
+    background-image: linear-gradient(ghostwhite, #f8f8ff9e), url("wallpaper.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 #home-name {
