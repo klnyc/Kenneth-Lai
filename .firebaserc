@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "kenneth-lai"
+  },
+  "targets": {
+    "kenneth-lai": {
+      "hosting": {
+        "kennethlai": [
+          "kennethlai"
+        ]
+      }
+    }
   }
 }
