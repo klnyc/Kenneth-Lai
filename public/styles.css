@@ -142,6 +142,7 @@ a:link, a:visited { color: inherit }
 
 .project-links {
     text-align: center;
+    padding-top: 20px;
 }
 
 .project-links img {
