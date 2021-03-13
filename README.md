@@ -12,4 +12,4 @@ Technologies
 * Git
 
 ## :rocket: Deployment
-https://kenneth-lai.web.app/
+https://kennethlai.web.app/
