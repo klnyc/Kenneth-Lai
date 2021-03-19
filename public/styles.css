@@ -72,7 +72,7 @@ a:link, a:visited { color: inherit }
     padding: 0 10px;
 }
 
-.personal-links img:hover {
+.personal-links img:hover, .project-links img:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -129,8 +129,12 @@ a:link, a:visited { color: inherit }
     padding-bottom: 6px;
 }
 
+.project-summary {
+    border-bottom: 1px solid dimgray;
+}
+
 .project-summary, .project-technologies, .biography-summary, .contact-summary {
-    padding: 6px 0;
+    padding: 16px 0;
     color: lightslategray;
     line-height: 28px;
     font-size: 14px;
@@ -203,6 +207,10 @@ a:link, a:visited { color: inherit }
 
 #biography {
     height: 100vh;
+}
+
+#contact {
+    border-top: 1px solid black;
 }
 
 .contact-summary span {
