@@ -1,6 +1,6 @@
 # Kenneth Lai
 
-Welcome to my personal website portfolio of my creations.
+Welcome to my personal website portfolio of my projects.
 
 ## :hammer_and_pick: Technology Stack
 
