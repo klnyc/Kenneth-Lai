@@ -8,6 +8,7 @@ Technologies
 * HTML
 * CSS
 * Node.js
+* Express
 * Firebase
 * Git
 
