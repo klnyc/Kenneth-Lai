@@ -142,6 +142,7 @@ a:link, a:visited { color: inherit }
 
 .project-technologies {
     font-style: italic;
+    text-align: center;
 }
 
 .project-links {
