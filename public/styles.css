@@ -32,14 +32,14 @@ a:link, a:visited { color: inherit }
 
 .navigation-line {
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 #home {
-    height: 100vh;
     background-image: linear-gradient(ghostwhite, #f8f8ff9e), url("wallpaper.jpg");
     background-size: cover;
     background-position: center center;
+    min-height: 100vh;
 }
 
 #home-name {
@@ -89,6 +89,7 @@ a:link, a:visited { color: inherit }
 #projects, #photography, #biography, #contact {
     padding: 20px 40px 20px 200px;
     box-shadow: 0px 2px 20px #888888;
+    min-height: 100vh;
 }
 
 .section-name {
@@ -137,8 +138,10 @@ a:link, a:visited { color: inherit }
     padding: 16px 0;
     color: lightslategray;
     line-height: 28px;
-    font-size: 14px;
 }
+
+.project-summary, .project-technologies { font-size: 12px }
+.biography-summary, .contact-summary { font-size: 14px }
 
 .project-technologies {
     font-style: italic;
