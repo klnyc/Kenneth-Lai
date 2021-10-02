@@ -239,6 +239,6 @@ a:link, a:visited { color: inherit }
 
     #projects, #photography, #biography, #contact {
         padding: 20px 40px;
-        height: auto;
+        min-height: auto;
     }
 }
