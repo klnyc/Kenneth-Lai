@@ -86,7 +86,7 @@ a:link, a:visited { color: inherit }
     40%, 60% { transform: translate3d(4px, 0, 0) }
 }
 
-#projects, #photography, #biography, #contact {
+#projects, #photography, #biography {
     padding: 20px 40px 20px 200px;
     box-shadow: 0px 2px 20px #888888;
     min-height: 100vh;
@@ -134,14 +134,14 @@ a:link, a:visited { color: inherit }
     border-bottom: 1px solid dimgray;
 }
 
-.project-summary, .project-technologies, .biography-summary, .contact-summary {
+.project-summary, .project-technologies, .biography-summary {
     padding: 16px 0;
     color: lightslategray;
     line-height: 28px;
 }
 
 .project-summary, .project-technologies { font-size: 12px }
-.biography-summary, .contact-summary { font-size: 14px }
+.biography-summary { font-size: 14px }
 
 .project-technologies {
     font-style: italic;
@@ -209,16 +209,7 @@ a:link, a:visited { color: inherit }
     pointer-events: none;
 }
 
-#contact {
-    background-color: #e2e2e6;
-}
-
-.contact-summary span {
-    font-weight: bold;
-    color: black;
-}
-
-#contact .personal-links {
+#biography .personal-links {
     text-align: left;
     padding-top: 30px;
 }
@@ -237,7 +228,7 @@ a:link, a:visited { color: inherit }
         padding-bottom: 20px;
     }
 
-    #projects, #photography, #biography, #contact {
+    #projects, #photography, #biography {
         padding: 20px 40px;
         min-height: auto;
     }
