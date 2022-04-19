@@ -31,7 +31,7 @@ a:visited {
   margin-left: 16px;
 }
 
-.navigation-line:hover {
+.navigation-line a:hover {
   color: black;
 }
 
@@ -164,13 +164,6 @@ a:visited {
   padding: 20px 0 40px;
 }
 
-.project-image {
-  /* flex: 1; */
-  /* text-align: center; */
-  width: 400px;
-  text-align: left;
-}
-
 .project-image img {
   height: 400px;
   width: 300px;
@@ -178,8 +171,13 @@ a:visited {
   box-shadow: 0px 0px 20px #888888;
 }
 
+.project-image img:hover {
+  box-shadow: 0px 0px 20px darkslategrey;
+}
+
 .project-description {
   flex: 1;
+  padding-left: 40px;
 }
 
 .project-title {
@@ -189,7 +187,7 @@ a:visited {
 }
 
 .project-title a:hover {
-  color: #3a3a3a;
+  color: darkslategray;
 }
 
 .project-summary {
