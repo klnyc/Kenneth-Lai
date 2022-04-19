@@ -130,6 +130,10 @@ a:link, a:visited { color: inherit }
     letter-spacing: 2px;
 }
 
+.project-title a:hover {
+    color: #3a3a3a;
+}
+
 .project-summary {
     border-bottom: 1px solid dimgray;
 }
