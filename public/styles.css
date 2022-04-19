@@ -1,239 +1,311 @@
-html { 
-    scroll-behavior: smooth 
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    background-color: ghostwhite;
-    position: relative;
-    letter-spacing: 0.2px;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: ghostwhite;
+  position: relative;
+  letter-spacing: 0.2px;
 }
 
-a { text-decoration: none }
-a:link, a:visited { color: inherit }
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: inherit;
+}
 
 #navigation {
-    position: fixed;
-    color: lightslategray;
-    background-color: transparent;
-    height: 200px;
-    top: calc((100vh - 200px)/2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 2;
-    margin-left: 16px;
+  position: fixed;
+  color: lightslategray;
+  background-color: transparent;
+  height: 200px;
+  top: calc((100vh - 200px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 2;
+  margin-left: 16px;
 }
 
 .navigation-line:hover {
-    color: black;
+  color: black;
 }
 
 .navigation-line {
-    letter-spacing: 2px;
-    font-size: 13px;
+  letter-spacing: 2px;
+  font-size: 13px;
 }
 
 #home {
-    background-image: linear-gradient(ghostwhite, #f8f8ff9e), url("wallpaper.jpg");
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
+  background-image: linear-gradient(ghostwhite, #f8f8ff9e), url("wallpaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
 }
 
 #home-name {
-    text-align: center;
-    padding: 200px 0 20px;
-    font-size: 40px;
-    letter-spacing: 6px;
+  text-align: center;
+  padding: 200px 0 20px;
+  font-size: 40px;
+  letter-spacing: 6px;
 }
 
 #home-name {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
-@keyframes fadeIn { 0% { opacity: 0 }; 100% { opacity: 1 } }
-@-moz-keyframes fadeIn { 0% { opacity: 0 }; 100% { opacity: 1 } }
-@-webkit-keyframes fadeIn { 0% { opacity: 0 }; 100% { opacity: 1 } }
-@-o-keyframes fadeIn { 0% { opacity: 0 }; 100% { opacity: 1 } }
-@-ms-keyframes fadeIn { 0% { opacity: 0 }; 100% { opacity: 1 } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .personal-links {
-    text-align: center;
+  text-align: center;
 }
 
 .personal-links img {
-    height: 22px;
-    padding: 0 10px;
+  height: 22px;
+  padding: 0 10px;
 }
 
-.personal-links img:hover, .project-links img:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+.personal-links img:hover,
+.project-links img:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
-  
+
 @keyframes shake {
-    10%, 90% { transform: translate3d(-1px, 0, 0) }
-    20%, 80% { transform: translate3d(2px, 0, 0) }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0) }
-    40%, 60% { transform: translate3d(4px, 0, 0) }
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
-#projects, #photography, #biography {
-    padding: 20px 40px 20px 200px;
-    box-shadow: 0px 2px 20px #888888;
-    min-height: 100vh;
+#projects,
+#photography,
+#biography {
+  padding: 20px 40px 20px 200px;
+  box-shadow: 0px 2px 20px #888888;
+  min-height: 100vh;
 }
 
 .section-name {
-    font-size: 18px;
-    padding: 20px 0;
-    letter-spacing: 2px;
+  font-size: 18px;
+  padding: 30px 0;
+  letter-spacing: 2px;
 }
 
 #projects {
-    background-color: #eceef97a;
+  background-color: #eceef97a;
 }
 
 .project {
-    height: 400px;
-    display: flex;
-    padding: 20px 0 40px;
+  height: 400px;
+  display: flex;
+  padding: 20px 0 40px;
 }
 
 .project-image {
-    flex: 1;
-    text-align: center;
+  /* flex: 1; */
+  /* text-align: center; */
+  width: 400px;
+  text-align: left;
 }
 
 .project-image img {
-    height: 400px;
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 20px #888888;
+  height: 400px;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px #888888;
 }
 
 .project-description {
-    flex: 1;
+  flex: 1;
 }
 
 .project-title {
-    text-align: center;
-    padding-bottom: 6px;
-    letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 6px;
+  letter-spacing: 2px;
 }
 
 .project-title a:hover {
-    color: #3a3a3a;
+  color: #3a3a3a;
 }
 
 .project-summary {
-    border-bottom: 1px solid dimgray;
+  border-bottom: 1px solid dimgray;
 }
 
-.project-summary, .project-technologies, .biography-summary {
-    padding: 16px 0;
-    color: lightslategray;
-    line-height: 28px;
+.project-summary,
+.project-technologies,
+.biography-summary {
+  padding: 16px 0;
+  color: lightslategray;
+  line-height: 28px;
 }
 
-.project-summary, .project-technologies { font-size: 12px }
-.biography-summary { font-size: 14px }
+.project-summary,
+.project-technologies {
+  font-size: 12px;
+}
+.biography-summary {
+  font-size: 14px;
+}
 
 .project-technologies {
-    font-style: italic;
-    text-align: center;
+  font-style: italic;
+  text-align: center;
 }
 
 .project-links {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .project-links img {
-    height: 30px;
-    padding: 6px 12px;
+  height: 30px;
+  padding: 6px 12px;
 }
 
 #photography {
-    background-color: #000000b8;
-    position: relative;
+  background-color: #000000b8;
+  position: relative;
 }
 
 #photography .section-name {
-    color: ghostwhite;
+  color: ghostwhite;
 }
 
 #photography .button {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 16px;
-    color: ghostwhite;
-    border: ghostwhite 1px solid;
-    font-size: 12px;
-    background-color: black;
-    height: 16px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 16px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 16px;
+  color: ghostwhite;
+  border: ghostwhite 1px solid;
+  font-size: 12px;
+  background-color: black;
+  height: 16px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 16px;
 }
 
 #photography .button:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #photo-grid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 .photo-row {
-    display: flex;
+  display: flex;
 }
 
 .photo {
-    flex: 1;
-    padding: 8px;
+  flex: 1;
+  padding: 8px;
 }
 
 .photo img {
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
 
 #biography .personal-links {
-    text-align: left;
-    padding-top: 30px;
+  text-align: left;
+  padding-top: 30px;
 }
 
 @media only screen and (max-width: 960px) {
-    #navigation {
-        display: none;
-    }
+  #navigation {
+    display: none;
+  }
 
-    .project {
-        flex-direction: column;
-        height: auto;
-    }
+  .project {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
+  }
 
-    .project-image {
-        padding-bottom: 20px;
-    }
+  .project-image {
+    padding-bottom: 20px;
+    flex: 1;
+    text-align: center;
+    width: auto;
+  }
 
-    #projects, #photography, #biography {
-        padding: 20px 40px;
-        min-height: auto;
-    }
+  #projects,
+  #photography,
+  #biography {
+    padding: 20px 40px;
+    min-height: auto;
+  }
 }
