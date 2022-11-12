@@ -6,7 +6,7 @@ Welcome to my personal website portfolio.
 
 Technologies
 * HTML
-* Sass
+* CSS
 * Bootstrap
 * Node.js
 * Firebase

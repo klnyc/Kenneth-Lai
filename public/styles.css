@@ -10,99 +10,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-a {
-  text-decoration: none;
-}
-a:link,
-a:visited {
-  color: inherit;
-}
-
-#navigation {
-  position: fixed;
-  color: lightslategray;
-  background-color: transparent;
-  height: 200px;
-  top: calc((100vh - 200px) / 2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  z-index: 2;
-  margin-left: 16px;
-}
-
-.navigation-line a:hover {
-  color: black;
-}
-
-.navigation-line {
-  letter-spacing: 2px;
-  font-size: 13px;
-}
-
-#home {
-  background-image: linear-gradient(ghostwhite, #f8f8ff9e), url("wallpaper.jpg");
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
-}
-
-#home-name {
-  text-align: center;
-  padding: 200px 0 30px;
-  font-size: 40px;
-  letter-spacing: 6px;
-}
-
-#home-name {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .personal-links {
   text-align: center;
 }
@@ -112,46 +19,11 @@ a:visited {
   padding: 0 10px;
 }
 
-.personal-links img:hover,
-.project-links img:hover {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
 #code,
-#photography,
-#biography {
+#photography {
   padding: 20px 40px 20px 200px;
   box-shadow: 0px 2px 20px #888888;
   min-height: 100vh;
-}
-
-.section-name {
-  font-size: 18px;
-  padding: 30px 0;
-  letter-spacing: 2px;
 }
 
 #code {
@@ -187,7 +59,7 @@ a:visited {
 }
 
 .project-title a:hover {
-  color: darkslategray;
+  color: navy;
 }
 
 .project-summary {
@@ -195,8 +67,7 @@ a:visited {
 }
 
 .project-summary,
-.project-technologies,
-.biography-summary {
+.project-technologies {
   padding: 16px 0;
   color: lightslategray;
   line-height: 28px;
@@ -205,9 +76,6 @@ a:visited {
 .project-summary,
 .project-technologies {
   font-size: 12px;
-}
-.biography-summary {
-  font-size: 14px;
 }
 
 .project-technologies {
@@ -228,32 +96,6 @@ a:visited {
 #photography {
   background-color: #000000b8;
   position: relative;
-}
-
-#photography .section-name {
-  color: ghostwhite;
-}
-
-#photography .button {
-  position: absolute;
-  top: 50px;
-  right: 40px;
-  cursor: pointer;
-  padding: 4px 10px;
-  border-radius: 16px;
-  color: ghostwhite;
-  border: ghostwhite 1px solid;
-  font-size: 12px;
-  background-color: black;
-  height: 16px;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 16px;
-}
-
-#photography .button:hover {
-  background-color: transparent;
 }
 
 #photo-grid {
@@ -277,16 +119,7 @@ a:visited {
   pointer-events: none;
 }
 
-#biography .personal-links {
-  text-align: left;
-  padding-top: 30px;
-}
-
 @media only screen and (max-width: 960px) {
-  #navigation {
-    display: none;
-  }
-
   .project {
     flex-direction: column;
     height: auto;
@@ -305,8 +138,7 @@ a:visited {
   }
 
   #code,
-  #photography,
-  #biography {
+  #photography {
     padding: 20px 40px;
     min-height: auto;
   }
