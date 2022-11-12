@@ -10,12 +10,33 @@ body {
   letter-spacing: 0.2px;
 }
 
+.header {
+  display: flex;
+}
+
+.title {
+  flex: 1;
+}
+
+.section-links {
+  flex: 1;
+  text-align: right;
+}
+
+.section-links span {
+  cursor: pointer;
+}
+
+.section-link-selected {
+  color: navy;
+}
+
 .personal-links {
-  text-align: center;
+  text-align: right;
 }
 
 .personal-links img {
-  height: 22px;
+  height: 18px;
   padding: 0 10px;
 }
 

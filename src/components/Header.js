@@ -1,11 +1,32 @@
-export const Header = () => {
-  const renderSectionLinks = () => {
+import { SectionType } from "../constants";
 
-  }
-  
+export const Header = ({ section, setSection }) => {
+  const renderSectionLinks = () => {
+    return (
+      <div className="section-links">
+        <span
+          className={`px-2 ${
+            section === SectionType.PHOTOGRAPHY ? "section-link-selected" : ""
+          }`}
+          onClick={() => setSection(SectionType.PHOTOGRAPHY)}
+        >
+          Photography
+        </span>
+        <span
+          className={`px-2 ${
+            section === SectionType.CODE ? "section-link-selected" : ""
+          }`}
+          onClick={() => setSection(SectionType.CODE)}
+        >
+          Code
+        </span>
+      </div>
+    );
+  };
+
   const renderPersonalLinks = () => {
     return (
-      <div className="personal-links">
+      <div className="personal-links px-2">
         <a href="https://www.linkedin.com/in/kennethklai/">
           <img src="icons/linkedin.svg" />
         </a>
@@ -23,8 +44,9 @@ export const Header = () => {
   };
 
   return (
-    <div className="header p-4">
+    <div className="header p-4 m-0">
       <div className="title">Kenneth Lai</div>
+      {renderSectionLinks()}
       {renderPersonalLinks()}
     </div>
   );
