@@ -1,16 +1,15 @@
 # Kenneth Lai
 
-Welcome to my personal website portfolio of my projects.
+Welcome to my personal website portfolio.
 
 ## :hammer_and_pick: Technology Stack
 
 Technologies
 * HTML
-* CSS
+* Sass
+* Bootstrap
 * Node.js
-* Express
 * Firebase
-* Git
 
 ## :rocket: Deployment
 https://kennethlai.web.app/
