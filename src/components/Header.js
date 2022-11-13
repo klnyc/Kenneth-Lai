@@ -4,6 +4,7 @@ export const Header = ({ section, setSection }) => {
   const renderSectionLinks = () => {
     return (
       <div className="section-links">
+        <div className="title-initals">KL</div>
         <span
           className={`px-2 ${
             section === SectionType.PHOTOGRAPHY ? "section-link-selected" : ""
@@ -46,7 +47,6 @@ export const Header = ({ section, setSection }) => {
   return (
     <div className="header p-4 m-0">
       <div className="title">KENNETH LAI</div>
-      <div className="title-initals">KL</div>
       {renderSectionLinks()}
       {renderPersonalLinks()}
     </div>
