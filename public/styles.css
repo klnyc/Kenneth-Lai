@@ -103,6 +103,7 @@ body {
   padding: 16px 0;
   color: lightslategray;
   line-height: 28px;
+  letter-spacing: 0.4px;
 }
 
 .project-summary,
@@ -161,7 +162,7 @@ body {
     display: initial;
     flex: 1;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 8px 0 0;
   }
 
@@ -193,8 +194,11 @@ body {
     width: auto;
   }
 
-  #code,
   #photography {
-    padding: 20px 40px;
+    padding: 8px;
+  }
+
+  #code {
+    padding: 0 20px 20px;
   }
 }
