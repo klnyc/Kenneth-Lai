@@ -16,6 +16,12 @@ body {
 
 .title {
   flex: 1;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.title-initals {
+  display: none;
 }
 
 .section-links {
@@ -23,12 +29,13 @@ body {
   text-align: right;
   border-right: 1px solid black;
   font-size: 14px;
-
+  padding: 0 8px 0 0;
 }
 
 .section-links span {
   cursor: pointer;
   line-height: 14px;
+  letter-spacing: 2px;
 }
 
 .section-link-selected {
@@ -37,6 +44,7 @@ body {
 
 .personal-links {
   text-align: right;
+  padding: 0 0 0 10px;
 }
 
 .personal-links img {
@@ -48,7 +56,7 @@ body {
 #photography {
   padding: 40px;
   box-shadow: 0px 2px 20px #888888;
-  min-height: 100vh;
+  min-height: auto;
 }
 
 #code {
@@ -56,7 +64,6 @@ body {
 }
 
 .project {
-  height: 400px;
   display: flex;
   padding: 20px 0 40px;
 }
@@ -69,7 +76,7 @@ body {
 }
 
 .project-image img:hover {
-  box-shadow: 0px 0px 20px darkslategrey;
+  box-shadow: 0px 0px 20px rgb(42, 46, 46);
 }
 
 .project-description {
@@ -143,6 +150,31 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
+  .header {
+    flex-direction: column;
+  }
+  .title {
+    display: none;
+  }
+
+  .title-initals {
+    display: initial;
+    flex: 1;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  .section-links {
+    border: none;
+    text-align: left;
+    padding: 0;
+  }
+
+  .personal-links {
+    text-align: left;
+    padding: 0;
+  }
+
   .project {
     flex-direction: column;
     height: auto;
@@ -163,6 +195,5 @@ body {
   #code,
   #photography {
     padding: 20px 40px;
-    min-height: auto;
   }
 }

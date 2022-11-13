@@ -3,7 +3,7 @@ import { SectionType } from "../constants";
 export const Header = ({ section, setSection }) => {
   const renderSectionLinks = () => {
     return (
-      <div className="section-links px-2">
+      <div className="section-links">
         <span
           className={`px-2 ${
             section === SectionType.PHOTOGRAPHY ? "section-link-selected" : ""
@@ -26,7 +26,7 @@ export const Header = ({ section, setSection }) => {
 
   const renderPersonalLinks = () => {
     return (
-      <div className="personal-links px-2">
+      <div className="personal-links">
         <a href="https://www.linkedin.com/in/kennethklai/">
           <img src="icons/linkedin.svg" />
         </a>
@@ -45,7 +45,8 @@ export const Header = ({ section, setSection }) => {
 
   return (
     <div className="header p-4 m-0">
-      <div className="title">Kenneth Lai</div>
+      <div className="title">KENNETH LAI</div>
+      <div className="title-initals">KL</div>
       {renderSectionLinks()}
       {renderPersonalLinks()}
     </div>
