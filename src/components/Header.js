@@ -3,14 +3,14 @@ import { SectionType } from "../constants";
 export const Header = ({ section, setSection }) => {
   const renderSectionLinks = () => {
     return (
-      <div className="section-links">
+      <div className="section-links px-2">
         <span
           className={`px-2 ${
             section === SectionType.PHOTOGRAPHY ? "section-link-selected" : ""
           }`}
           onClick={() => setSection(SectionType.PHOTOGRAPHY)}
         >
-          Photography
+          PHOTOGRAPHY
         </span>
         <span
           className={`px-2 ${
@@ -18,7 +18,7 @@ export const Header = ({ section, setSection }) => {
           }`}
           onClick={() => setSection(SectionType.CODE)}
         >
-          Code
+          CODE
         </span>
       </div>
     );

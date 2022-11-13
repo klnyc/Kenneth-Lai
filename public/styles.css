@@ -21,14 +21,18 @@ body {
 .section-links {
   flex: 1;
   text-align: right;
+  border-right: 1px solid black;
+  font-size: 14px;
+
 }
 
 .section-links span {
   cursor: pointer;
+  line-height: 14px;
 }
 
 .section-link-selected {
-  color: navy;
+  color: #104cee;
 }
 
 .personal-links {
@@ -42,7 +46,7 @@ body {
 
 #code,
 #photography {
-  padding: 20px 40px 20px 200px;
+  padding: 40px;
   box-shadow: 0px 2px 20px #888888;
   min-height: 100vh;
 }
@@ -116,13 +120,11 @@ body {
 
 #photography {
   background-color: #000000b8;
-  position: relative;
 }
 
 #photo-grid {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 
 .photo-row {
