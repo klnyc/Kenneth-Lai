@@ -165,7 +165,7 @@ body {
 }
 
 .photo:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .photo_text {

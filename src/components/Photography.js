@@ -1,42 +1,42 @@
 export const Photography = () => {
+  const renderPhoto = (fileName, text) => {
+    return (
+      <div className="photo">
+        <img src={`photos/${fileName}.jpg`} />
+        <div class="overlay">
+          <div class="photo_text">{text}</div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div id="photography">
       <div id="photo_grid">
         <div className="photo_row">
-          <div className="photo">
-            <img src="photos/Tribute in Light (Bridge).jpg" />
-            <div class="overlay">
-              <div class="photo_text">Hello World</div>
-            </div>
-          </div>
-          <div className="photo">
-            <img src="photos/Chinatown.jpg" />
-          </div>
-          <div className="photo">
-            <img src="photos/Mongkok.jpg" />
-          </div>
+          {renderPhoto("Tribute in Light (Bridge)", "Tribute in light")}
+          {renderPhoto("Chinatown", "Chinatown")}
+          {renderPhoto("Mongkok", "Mongkok")}
         </div>
         <div className="photo_row">
-          <div className="photo">
-            <img src="photos/Tokyo International Forum (Front).jpg" />
-          </div>
-          <div className="photo">
-            <img src="photos/Incheon International Airport (Right).jpg" />
-          </div>
-          <div className="photo">
-            <img src="photos/Shinjuku (Street).jpg" />
-          </div>
+          {renderPhoto(
+            "Tokyo International Forum (Front)",
+            "Tokyo International Forum"
+          )}
+          {renderPhoto(
+            "Incheon International Airport (Right)",
+            "Incheon International Airport"
+          )}
+
+          {renderPhoto("Shinjuku (Street)", "Shinjuku")}
         </div>
         <div className="photo_row">
-          <div className="photo">
-            <img src="photos/Senso-Ji.jpg" />
-          </div>
-          <div className="photo">
-            <img src="photos/Dongdaemun Design Plaza (Outdoors).jpg" />
-          </div>
-          <div className="photo">
-            <img src="photos/Dangsan (Station).jpg" />
-          </div>
+          {renderPhoto("Senso-Ji", "Senso-Ji")}
+          {renderPhoto(
+            "Dongdaemun Design Plaza (Outdoors)",
+            "Dongdaemun Design Plaza"
+          )}
+          {renderPhoto("Dangsan (Station)", "Dangsan")}
         </div>
       </div>
     </div>
