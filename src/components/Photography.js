@@ -1,10 +1,37 @@
 export const Photography = () => {
+  // [file name, photo text]
+  const photos = [
+    [
+      ["Tribute in Light (Bridge)", "Tribute in light"],
+      ["Chinatown", "Chinatown"],
+      ["Mongkok", "Mongkok"],
+    ],
+    [
+      ["Tokyo International Forum (Front)", "Tokyo International Forum"],
+      [
+        "Incheon International Airport (Right)",
+        "Incheon International Airport",
+      ],
+      ["Shinjuku (Street)", "Shinjuku"],
+    ],
+    [
+      ["Senso-Ji", "Senso-Ji"],
+      ["Dongdaemun Design Plaza (Outdoors)", "Dongdaemun Design Plaza"],
+      ["Dangsan (Station)", "Dangsan"],
+    ],
+    [
+      ["FDR Drive", "FDR Drive"],
+      ["Weehawken", "Weehawken"],
+      ["JFK Airport", "JFK Airport"],
+    ],
+  ];
+
   const renderPhoto = (fileName, text) => {
     return (
-      <div className="photo">
+      <div key={fileName} className="photo">
         <img src={`photos/${fileName}.jpg`} />
-        <div class="overlay">
-          <div class="photo_text">{text}</div>
+        <div className="overlay">
+          <div className="photo_text">{text}</div>
         </div>
       </div>
     );
@@ -13,31 +40,13 @@ export const Photography = () => {
   return (
     <div id="photography">
       <div id="photo_grid">
-        <div className="photo_row">
-          {renderPhoto("Tribute in Light (Bridge)", "Tribute in light")}
-          {renderPhoto("Chinatown", "Chinatown")}
-          {renderPhoto("Mongkok", "Mongkok")}
-        </div>
-        <div className="photo_row">
-          {renderPhoto(
-            "Tokyo International Forum (Front)",
-            "Tokyo International Forum"
-          )}
-          {renderPhoto(
-            "Incheon International Airport (Right)",
-            "Incheon International Airport"
-          )}
-
-          {renderPhoto("Shinjuku (Street)", "Shinjuku")}
-        </div>
-        <div className="photo_row">
-          {renderPhoto("Senso-Ji", "Senso-Ji")}
-          {renderPhoto(
-            "Dongdaemun Design Plaza (Outdoors)",
-            "Dongdaemun Design Plaza"
-          )}
-          {renderPhoto("Dangsan (Station)", "Dangsan")}
-        </div>
+        {photos.map((row, index) => {
+          return (
+            <div key={index} className="photo_row">
+              {row.map(([fileName, text]) => renderPhoto(fileName, text))}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
