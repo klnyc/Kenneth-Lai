@@ -3,11 +3,11 @@ import { SectionType } from "../constants";
 export const Header = ({ section, setSection }) => {
   const renderSectionLinks = () => {
     return (
-      <div className="section-links">
-        <div className="title-initals">KL</div>
+      <div className="section_links">
+        <div className="title_initials">KL</div>
         <span
           className={`px-2 ${
-            section === SectionType.PHOTOGRAPHY ? "section-link-selected" : ""
+            section === SectionType.PHOTOGRAPHY ? "section_link_selected" : ""
           }`}
           onClick={() => setSection(SectionType.PHOTOGRAPHY)}
         >
@@ -15,7 +15,7 @@ export const Header = ({ section, setSection }) => {
         </span>
         <span
           className={`px-2 ${
-            section === SectionType.CODE ? "section-link-selected" : ""
+            section === SectionType.CODE ? "section_link_selected" : ""
           }`}
           onClick={() => setSection(SectionType.CODE)}
         >
@@ -27,7 +27,7 @@ export const Header = ({ section, setSection }) => {
 
   const renderPersonalLinks = () => {
     return (
-      <div className="personal-links">
+      <div className="personal_links">
         <a href="https://www.linkedin.com/in/kennethklai/">
           <img src="icons/linkedin.svg" />
         </a>
