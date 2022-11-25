@@ -1,5 +1,10 @@
 export const Photography = () => {
   // [file name, photo text]
+  // [
+  //   ["", ""],
+  //   ["", ""],
+  //   ["", ""],
+  // ],
   const photos = [
     [
       ["Tribute in Light (Bridge)", "Tribute in light"],
@@ -23,6 +28,25 @@ export const Photography = () => {
       ["FDR Drive", "FDR Drive"],
       ["Weehawken", "Weehawken"],
       ["JFK Airport", "JFK Airport"],
+    ],
+    [
+      ["North Avenue Beach", "North Avenue Beach"],
+      ["Shibuya (109)", "Shibuya"],
+      ["Shinjuku (Viaduct)", "Shinjuku"],
+    ],
+    [
+      ["Verrazano Bridge", "Verrazano Bridge"],
+      ["Dangsan (Balcony)", "Dangsan"],
+      ["Haneda Airport (Atrium)", "Haneda Airport"],
+    ],
+    [
+      ["Water Tower Place (Top)", "Water Tower Place"],
+      ["Museum Of Contemporary Art (Top)", "Museum Of Contemporary Art"],
+      ["Navy Pier", "Navy Pier"],
+    ],
+    [
+      ["Hudson Yards (High Bar)", "Hudson Yards"],
+      ["Port Authority", "Port Authority"],
     ],
   ];
 

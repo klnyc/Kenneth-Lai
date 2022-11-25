@@ -5,7 +5,7 @@ import { Code } from "./Code";
 import { SectionType } from "../constants";
 
 export const App = () => {
-  const [section, setSection] = useState(SectionType.PHOTOGRAPHY);
+  const [section, setSection] = useState(SectionType.CODE);
 
   const displaySection = () => {
     switch (section) {
