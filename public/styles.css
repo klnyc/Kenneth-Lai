@@ -53,7 +53,7 @@ body {
 }
 
 #code,
-#photography {
+#travel {
   padding: 40px;
   min-height: 100vh;
   border-top: #888888 solid 1px;
@@ -130,7 +130,7 @@ body {
   padding: 6px 12px;
 }
 
-#photography {
+#travel {
   background-color: #000000b8;
 }
 
@@ -226,7 +226,7 @@ body {
     width: auto;
   }
 
-  #photography {
+  #travel {
     padding: 8px;
   }
 

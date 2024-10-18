@@ -1,4 +1,4 @@
-import { Photography } from "./Photography";
+import { Travel } from "./Travel";
 import { Code } from "./Code";
 import { SectionType } from "../constants";
 
@@ -8,8 +8,8 @@ interface BodyProps {
 
 const Body = ({ selectedSection }: BodyProps): JSX.Element => {
   switch (selectedSection) {
-    case SectionType.PHOTOGRAPHY:
-      return <Photography />;
+    case SectionType.TRAVEL:
+      return <Travel />;
     case SectionType.CODE:
       return <Code />;
   }

@@ -38,7 +38,7 @@ const photos: string[][][] = [
   ],
 ];
 
-export const Photography = (): JSX.Element => {
+export const Travel = (): JSX.Element => {
   const renderPhoto = (fileName: string, text: string): JSX.Element => {
     return (
       <div key={fileName} className="photo">
@@ -51,7 +51,7 @@ export const Photography = (): JSX.Element => {
   };
 
   return (
-    <div id="photography">
+    <div id="travel">
       <div id="photo_grid">
         {photos.map((row, index) => {
           return (
