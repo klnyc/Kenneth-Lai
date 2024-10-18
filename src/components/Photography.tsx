@@ -1,9 +1,8 @@
 // Photo structure
-// [file name, photo text]
 // [
-//   ["", ""],
-//   ["", ""],
-//   ["", ""],
+//   [file name, display text],
+//   [file name, display text],
+//   [file name, display text],
 // ],
 
 const photos: string[][][] = [
@@ -36,15 +35,6 @@ const photos: string[][][] = [
     ["Verrazano Bridge", "Verrazano Bridge"],
     ["Dangsan (Balcony)", "Dangsan"],
     ["Haneda Airport (Atrium)", "Haneda Airport"],
-  ],
-  [
-    ["Water Tower Place (Top)", "Water Tower Place"],
-    ["Museum Of Contemporary Art (Top)", "Museum Of Contemporary Art"],
-    ["Navy Pier", "Navy Pier"],
-  ],
-  [
-    ["Hudson Yards (High Bar)", "Hudson Yards"],
-    ["Port Authority", "Port Authority"],
   ],
 ];
 

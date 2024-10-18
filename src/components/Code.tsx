@@ -24,8 +24,8 @@ export const Code = (): JSX.Element => {
             of any city.
           </div>
           <div className="project_technologies">
-            JavaScript, Node.js, React, Redux, Firebase, Webpack, Google Maps
-            API, Open Weather API, HTML, CSS
+            JavaScript, React, Redux, Firebase, Webpack, Google Maps API, Open
+            Weather API, HTML, CSS
           </div>
           <div className="project_links">
             <a href="https://idestination.web.app/">
@@ -61,8 +61,8 @@ export const Code = (): JSX.Element => {
             checkout as a user or guest, and view their order history.
           </div>
           <div className="project_technologies">
-            JavaScript, Node.js, React, Redux, Express, PostgreSQL, Sequelize,
-            Webpack, Heroku, HTML, CSS
+            JavaScript, React, Redux, Express, PostgreSQL, Sequelize, Webpack,
+            Heroku, HTML, CSS
           </div>
           <div className="project_links">
             <a href="https://jukeboxcenter.herokuapp.com/">
@@ -95,8 +95,7 @@ export const Code = (): JSX.Element => {
             companies in their watchlist using real-time stock data.
           </div>
           <div className="project_technologies">
-            JavaScript, Node.js, React, Firebase, IEX Cloud API, HTML, Sass,
-            Bootstrap
+            JavaScript, React, Firebase, IEX Cloud API, HTML, Sass, Bootstrap
           </div>
           <div className="project_links">
             <a href="https://paperrockets.web.app/">
@@ -126,7 +125,7 @@ export const Code = (): JSX.Element => {
             identified by unique screen names.
           </div>
           <div className="project_technologies">
-            JavaScript, Node.js, React, Firebase, HTML, Sass, Bootstrap
+            JavaScript, React, Firebase, HTML, Sass, Bootstrap
           </div>
           <div className="project_links">
             <a href="https://weout.web.app/">
