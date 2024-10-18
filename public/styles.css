@@ -39,7 +39,7 @@ body {
 }
 
 .section_link_selected {
-  color: #104cee;
+  color: #013de2;
 }
 
 .personal_links {
@@ -88,6 +88,10 @@ body {
   text-align: center;
   padding-bottom: 6px;
   letter-spacing: 2px;
+}
+
+.project_title a {
+  color: #013de2;
 }
 
 .project_title a:hover {

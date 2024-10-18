@@ -37,7 +37,7 @@ export const Header = ({ section, setSection }): JSX.Element => {
         <a href="https://www.instagram.com/kl.nyc/">
           <img src="icons/instagram.svg" />
         </a>
-        <a href="https://www.youtube.com/watch?v=WpM40BC9rbk">
+        <a href="https://www.youtube.com/watch?v=49xpx7a_prY">
           <img src="icons/youtube.svg" />
         </a>
       </div>
