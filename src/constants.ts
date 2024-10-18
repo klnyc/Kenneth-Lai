@@ -1,4 +1,4 @@
 export enum SectionType {
+  CODE = "CODE",
   PHOTOGRAPHY = "PHOTOGRAPHY",
-  CODE= "CODE",
-};
+}

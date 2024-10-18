@@ -1,31 +1,39 @@
 import { SectionType } from "../constants";
 
-export const Header = ({ section, setSection }): JSX.Element => {
-  const renderSectionLinks = () => {
+interface HeaderProps {
+  selectedSection: SectionType;
+  setSelectedSection: (section: SectionType) => void;
+}
+
+export const Header = ({
+  selectedSection,
+  setSelectedSection,
+}: HeaderProps): JSX.Element => {
+  const renderSectionLink = (section: SectionType): JSX.Element => {
+    return (
+      <span
+        className={`px-2 ${
+          section === selectedSection ? "section_link_selected" : ""
+        }`}
+        onClick={() => setSelectedSection(section)}
+      >
+        {section}
+      </span>
+    );
+  };
+
+  const renderSectionLinks = (): JSX.Element => {
     return (
       <div className="section_links">
         <div className="title_initials">KL</div>
-        <span
-          className={`px-2 ${
-            section === SectionType.CODE ? "section_link_selected" : ""
-          }`}
-          onClick={() => setSection(SectionType.CODE)}
-        >
-          CODE
-        </span>
-        <span
-          className={`px-2 ${
-            section === SectionType.PHOTOGRAPHY ? "section_link_selected" : ""
-          }`}
-          onClick={() => setSection(SectionType.PHOTOGRAPHY)}
-        >
-          PHOTOGRAPHY
-        </span>
+        {Object.values(SectionType).map((section) =>
+          renderSectionLink(section)
+        )}
       </div>
     );
   };
 
-  const renderPersonalLinks = () => {
+  const renderPersonalLinks = (): JSX.Element => {
     return (
       <div className="personal_links">
         <a href="https://www.linkedin.com/in/kennethklai/">

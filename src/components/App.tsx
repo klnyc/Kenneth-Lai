@@ -4,12 +4,17 @@ import { Body } from "./Body";
 import { SectionType } from "../constants";
 
 export const App = (): JSX.Element => {
-  const [section, setSection] = useState<SectionType>(SectionType.CODE);
+  const [selectedSection, setSelectedSection] = useState<SectionType>(
+    SectionType.CODE
+  );
 
   return (
     <div className="app">
-      <Header section={section} setSection={setSection} />
-      <Body section={section} />
+      <Header
+        selectedSection={selectedSection}
+        setSelectedSection={setSelectedSection}
+      />
+      <Body selectedSection={selectedSection} />
     </div>
   );
 };
