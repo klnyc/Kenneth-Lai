@@ -42,40 +42,6 @@ export const Code = (): JSX.Element => {
       </div>
       <div className="project">
         <div className="project_image">
-          <a href="https://jukeboxcenter.herokuapp.com/">
-            <img src="/screenshots/jukeboxcenter.png" />
-          </a>
-        </div>
-        <div className="project_description">
-          <div className="project_title">
-            <a
-              href="https://jukeboxcenter.herokuapp.com/"
-              className="text-decoration-none"
-            >
-              Jukebox Center
-            </a>
-          </div>
-          <div className="project_summary">
-            Jukebox Center is an e-commerce website that sells music albums.
-            Users can filter albums by genre, add albums to their cart to
-            checkout as a user or guest, and view their order history.
-          </div>
-          <div className="project_technologies">
-            JavaScript, React, Redux, Express, PostgreSQL, Sequelize, Webpack,
-            Heroku, HTML, CSS
-          </div>
-          <div className="project_links">
-            <a href="https://jukeboxcenter.herokuapp.com/">
-              <img src="icons/link.svg" />
-            </a>
-            <a href="https://github.com/klnyc/JukeboxCenter">
-              <img src="icons/github.svg" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="project">
-        <div className="project_image">
           <a href="https://paperrockets.web.app/">
             <img src="/screenshots/paperrockets.png" />
           </a>
@@ -132,6 +98,40 @@ export const Code = (): JSX.Element => {
               <img src="icons/link.svg" />
             </a>
             <a href="https://github.com/klnyc/WeOut">
+              <img src="icons/github.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project">
+        <div className="project_image">
+          <a href="https://jukeboxcenter.herokuapp.com/">
+            <img src="/screenshots/jukeboxcenter.png" />
+          </a>
+        </div>
+        <div className="project_description">
+          <div className="project_title">
+            <a
+              href="https://jukeboxcenter.herokuapp.com/"
+              className="text-decoration-none"
+            >
+              Jukebox Center
+            </a>
+          </div>
+          <div className="project_summary">
+            Jukebox Center is an e-commerce website that sells music albums.
+            Users can filter albums by genre, add albums to their cart to
+            checkout as a user or guest, and view their order history.
+          </div>
+          <div className="project_technologies">
+            JavaScript, React, Redux, Express, PostgreSQL, Sequelize, Webpack,
+            Heroku, HTML, CSS
+          </div>
+          <div className="project_links">
+            <a href="https://jukeboxcenter.herokuapp.com/">
+              <img src="icons/link.svg" />
+            </a>
+            <a href="https://github.com/klnyc/JukeboxCenter">
               <img src="icons/github.svg" />
             </a>
           </div>
