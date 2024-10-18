@@ -4,7 +4,7 @@ import { Body } from "./Body";
 import { SectionType } from "../constants";
 
 export const App = (): JSX.Element => {
-  const [section, setSection] = useState(SectionType.CODE);
+  const [section, setSection] = useState<SectionType>(SectionType.CODE);
 
   return (
     <div className="app">

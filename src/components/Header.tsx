@@ -7,19 +7,19 @@ export const Header = ({ section, setSection }): JSX.Element => {
         <div className="title_initials">KL</div>
         <span
           className={`px-2 ${
-            section === SectionType.PHOTOGRAPHY ? "section_link_selected" : ""
-          }`}
-          onClick={() => setSection(SectionType.PHOTOGRAPHY)}
-        >
-          PHOTOGRAPHY
-        </span>
-        <span
-          className={`px-2 ${
             section === SectionType.CODE ? "section_link_selected" : ""
           }`}
           onClick={() => setSection(SectionType.CODE)}
         >
           CODE
+        </span>
+        <span
+          className={`px-2 ${
+            section === SectionType.PHOTOGRAPHY ? "section_link_selected" : ""
+          }`}
+          onClick={() => setSection(SectionType.PHOTOGRAPHY)}
+        >
+          PHOTOGRAPHY
         </span>
       </div>
     );

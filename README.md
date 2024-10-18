@@ -5,11 +5,14 @@ Welcome to my personal website portfolio.
 ## :hammer_and_pick: Technology Stack
 
 Technologies
-* HTML
-* CSS
-* Bootstrap
-* Node.js
-* Firebase
+
+- Typescript
+- React
+- Bootstrap
+- Firebase
+- HTML
+- CSS
 
 ## :rocket: Deployment
+
 https://kennethlai.web.app/
