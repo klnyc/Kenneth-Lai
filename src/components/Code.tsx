@@ -1,4 +1,4 @@
-export const Code = () => {
+export const Code = (): JSX.Element => {
   return (
     <div id="code">
       <div className="project">

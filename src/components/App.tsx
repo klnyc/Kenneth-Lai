@@ -3,7 +3,7 @@ import { Header } from "./Header";
 import { Body } from "./Body";
 import { SectionType } from "../constants";
 
-export const App = () => {
+export const App = (): JSX.Element => {
   const [section, setSection] = useState(SectionType.CODE);
 
   return (

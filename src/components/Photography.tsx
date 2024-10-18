@@ -1,4 +1,4 @@
-export const Photography = () => {
+export const Photography = (): JSX.Element => {
   // [file name, photo text]
   // [
   //   ["", ""],

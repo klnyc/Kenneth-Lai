@@ -1,6 +1,6 @@
 import { SectionType } from "../constants";
 
-export const Header = ({ section, setSection }) => {
+export const Header = ({ section, setSection }): JSX.Element => {
   const renderSectionLinks = () => {
     return (
       <div className="section_links">
