@@ -87,8 +87,7 @@ export const Code = (): JSX.Element => {
           </div>
           <div className="project_summary">
             WeOut is an instant messaging application that allows users to
-            create circles and chat with members within their circles,
-            identified by unique screen names.
+            create chatrooms and talk with friends, family, and community members.
           </div>
           <div className="project_technologies">
             JavaScript, React, Firebase, HTML, Sass, Bootstrap
