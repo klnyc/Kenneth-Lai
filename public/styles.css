@@ -79,7 +79,7 @@ body {
   box-shadow: 0px 0px 20px rgb(42, 46, 46);
 }
 
-.project_description {
+.project_summary {
   flex: 1;
   padding-left: 40px;
 }
@@ -98,11 +98,11 @@ body {
   color: navy;
 }
 
-.project_summary {
+.project_description {
   border-bottom: 1px solid dimgray;
 }
 
-.project_summary,
+.project_description,
 .project_technologies {
   padding: 16px 0;
   color: lightslategray;
@@ -110,7 +110,7 @@ body {
   letter-spacing: 0.4px;
 }
 
-.project_summary,
+.project_description,
 .project_technologies {
   font-size: 12px;
 }
@@ -215,7 +215,7 @@ body {
     padding: 50px 0;
   }
 
-  .project_description {
+  .project_summary {
     padding: 0;
   }
 
