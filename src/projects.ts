@@ -30,7 +30,6 @@ export const projects: ProjectProps[] = [
       "JavaScript",
       "React",
       "Firebase",
-      "IEX Cloud API",
       "Sass",
       "Bootstrap",
     ],

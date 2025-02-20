@@ -31,7 +31,7 @@ export const Project = ({
           </a>
         </div>
         <div className="project_description">{description}</div>
-        <div className="project_technologies">{techStack.join(", ")}</div>
+        <div className="project_technologies">Tech stack: {techStack.join(", ")}</div>
         <div className="project_links">
           <a href={projectUrl}>
             <img src="icons/link.svg" />

@@ -61,11 +61,18 @@ body {
 
 #code {
   background-color: #eceef97a;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .project {
   display: flex;
-  padding: 20px 0 40px;
+  padding: 30px;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .project_image img {
@@ -212,7 +219,7 @@ body {
   .project {
     flex-direction: column;
     height: auto;
-    padding: 50px 0;
+    padding: 30px;
   }
 
   .project_summary {
@@ -231,7 +238,10 @@ body {
   }
 
   #code {
-    padding: 0 20px 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .photo_text {
