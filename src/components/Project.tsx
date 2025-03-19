@@ -1,3 +1,5 @@
+import { Link } from "./Link";
+
 export interface ProjectProps {
   name: string;
   description: string;
@@ -20,30 +22,25 @@ export const Project = ({
   return (
     <div className="project">
       <div className="project_image">
-        <a href={projectUrl}>
-          <img src={imgSrc} />
-        </a>
+        <Link href={projectUrl} imgSrc={imgSrc} />
       </div>
       <div className="project_summary">
         <div className="project_title">
-          <a href={projectUrl} className="text-decoration-none">
-            {name}
-          </a>
+          <Link
+            href={projectUrl}
+            imgSrc={imgSrc}
+            className="text-decoration-none"
+            text={name}
+          />
         </div>
         <div className="project_description">{description}</div>
-        <div className="project_technologies">Tech stack: {techStack.join(", ")}</div>
+        <div className="project_technologies">
+          Tech stack: {techStack.join(", ")}
+        </div>
         <div className="project_links">
-          <a href={projectUrl}>
-            <img src="icons/link.svg" />
-          </a>
-          <a href={githubUrl}>
-            <img src="icons/github.svg" />
-          </a>
-          {youtubeUrl && (
-            <a href={youtubeUrl}>
-              <img src="icons/youtube.svg" />
-            </a>
-          )}
+          <Link href={projectUrl} imgSrc="icons/link.svg" />
+          <Link href={githubUrl} imgSrc="icons/github.svg" />
+          {youtubeUrl && <Link href={youtubeUrl} imgSrc="icons/youtube.svg" />}
         </div>
       </div>
     </div>

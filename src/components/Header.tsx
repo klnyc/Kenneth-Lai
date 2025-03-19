@@ -1,4 +1,5 @@
-import { SectionType } from "../constants";
+import { Link } from "./Link";
+import { SectionType, personalLinks } from "../constants";
 
 interface HeaderProps {
   selectedSection: SectionType;
@@ -12,18 +13,9 @@ interface SectionLinkProps extends HeaderProps {
 const PersonalLinks = (): JSX.Element => {
   return (
     <div className="personal_links">
-      <a href="https://www.linkedin.com/in/kennethklai/">
-        <img src="icons/linkedin.svg" />
-      </a>
-      <a href="https://github.com/klnyc">
-        <img src="icons/github.svg" />
-      </a>
-      <a href="https://www.instagram.com/kl.nyc/">
-        <img src="icons/instagram.svg" />
-      </a>
-      <a href="https://www.youtube.com/watch?v=49xpx7a_prY">
-        <img src="icons/youtube.svg" />
-      </a>
+      {personalLinks.map((link) => (
+        <Link href={link.url} imgSrc={link.imgSrc} />
+      ))}
     </div>
   );
 };
