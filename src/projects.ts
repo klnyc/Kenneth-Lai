@@ -15,6 +15,7 @@ export const projects: ProjectProps[] = [
       "Webpack",
       "Google Maps API",
       "Open Weather API",
+      "HTML",
       "CSS",
     ],
     projectUrl: "https://idestination.web.app/",
@@ -26,13 +27,7 @@ export const projects: ProjectProps[] = [
     description: `Paper Rockets is a website for paper trading stocks in the U.S. stock market. 
       Users can buy/sell shares and track publicly traded companies in their watchlist.`,
     imgSrc: "/screenshots/paperrockets.png",
-    techStack: [
-      "JavaScript",
-      "React",
-      "Firebase",
-      "Sass",
-      "Bootstrap",
-    ],
+    techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
     projectUrl: "https://paperrockets.web.app/",
     githubUrl: "https://github.com/klnyc/Paper-Rockets",
   },
@@ -41,7 +36,7 @@ export const projects: ProjectProps[] = [
     description: `WeOut is an instant messaging application that allows users to
       create chatrooms and talk with friends, family, and community members.`,
     imgSrc: "/screenshots/weout.png",
-    techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap"],
+    techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
     projectUrl: "https://weout.web.app/",
     githubUrl: "https://github.com/klnyc/WeOut",
   },
@@ -60,9 +55,10 @@ export const projects: ProjectProps[] = [
       "Sequelize",
       "Webpack",
       "Heroku",
+      "HTML",
       "CSS",
     ],
-    projectUrl: "https://jukeboxcenter.herokuapp.com/",
+    projectUrl: "https://github.com/klnyc/JukeboxCenter",
     githubUrl: "https://github.com/klnyc/JukeboxCenter",
   },
 ];
