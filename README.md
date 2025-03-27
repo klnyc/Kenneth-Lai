@@ -16,3 +16,5 @@ Technologies
 ## :rocket: Deployment
 
 https://kennethlai.web.app/
+
+Run `npm run build` or `yarn build`, then `firebase deploy`.
