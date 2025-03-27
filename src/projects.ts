@@ -61,4 +61,20 @@ export const projects: ProjectProps[] = [
     projectUrl: "https://github.com/klnyc/JukeboxCenter",
     githubUrl: "https://github.com/klnyc/JukeboxCenter",
   },
+  {
+    name: "Sudoku",
+    description: `Sudoku is a number-placement puzzle. 
+      The goal is to fill the 9x9 grid with digits so that 
+      each column, each row, and each of the nine 3x3 subgrids 
+      contain all of the digits from 1 to 9 exactly once.`,
+    imgSrc: "/screenshots/sudoku.png",
+    techStack: [
+      "JavaScript",
+      "React",
+      "HTML",
+      "CSS",
+    ],
+    projectUrl: "https://klnyc.github.io/Sudoku/",
+    githubUrl: "https://github.com/klnyc/Sudoku",
+  },
 ];
