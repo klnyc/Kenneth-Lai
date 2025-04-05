@@ -77,4 +77,19 @@ export const projects: ProjectProps[] = [
     projectUrl: "https://klnyc.github.io/Sudoku/",
     githubUrl: "https://github.com/klnyc/Sudoku",
   },
+  {
+    name: "Ball Drop",
+    description: `Ball Drop is a game where you try to catch every falling ball. 
+      The basket follows your mouse movements and the ball drops faster after every successful catch.`,
+    imgSrc: "/screenshots/balldrop.png",
+    techStack: [
+      "JavaScript",
+      "React",
+      "Vite",
+      "HTML",
+      "CSS",
+    ],
+    projectUrl: "https://klnyc.github.io/Ball-Drop/",
+    githubUrl: "https://github.com/klnyc/Ball-Drop",
+  },
 ];
