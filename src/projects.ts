@@ -3,9 +3,9 @@ import { ProjectProps } from "./components/Project";
 export const projects: ProjectProps[] = [
   {
     name: "iDestination",
-    description: `iDestination is a travel planning web application which allows users to keep track of places 
+    description: `iDestination is a travel planning application that allows users to keep track of places 
       that they have traveled to in the past and places that they plan to visit in the future. 
-      Users can search, add, and filter locations on an integrated map and view real-time weather of any city.`,
+      Users can search, add, and filter locations on a map and view real-time weather of any city.`,
     imgSrc: "/screenshots/idestination.png",
     techStack: [
       "JavaScript",

@@ -62,33 +62,30 @@ body {
 #code {
   background-color: #eceef97a;
   padding: 30px;
-  display: flex;
-  flex-direction: column;
   gap: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .project {
-  display: flex;
   padding: 30px;
   border: 1px solid #888888;
   border-radius: 8px;
   background-color: white;
 }
 
+.project_image {
+  padding: 10px 0;
+  text-align: center;
+  width: auto;
+}
+
 .project_image img {
   height: 400px;
   width: 300px;
   border-radius: 6px;
-  box-shadow: 0px 0px 20px #888888;
-}
-
-.project_image img:hover {
-  box-shadow: 0px 0px 20px rgb(42, 46, 46);
-}
-
-.project_summary {
-  flex: 1;
-  padding-left: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .project_title {
@@ -107,6 +104,7 @@ body {
 
 .project_description {
   border-bottom: 1px solid dimgray;
+  height: 150px;
 }
 
 .project_description,
@@ -125,11 +123,11 @@ body {
 .project_technologies {
   font-style: italic;
   text-align: center;
+  height: 88px;
 }
 
 .project_links {
   text-align: center;
-  padding-top: 20px;
 }
 
 .project_links img {
@@ -217,20 +215,13 @@ body {
   }
 
   .project {
-    flex-direction: column;
     height: auto;
     padding: 30px;
   }
 
-  .project_summary {
-    padding: 0;
-  }
-
-  .project_image {
-    padding-bottom: 20px;
-    flex: 1;
-    text-align: center;
-    width: auto;
+  .project_description,
+  .project_technologies {
+    height: auto;
   }
 
   #travel {
@@ -238,9 +229,9 @@ body {
   }
 
   #code {
+    display: grid;
+    grid-template-columns: auto;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
   }
 
