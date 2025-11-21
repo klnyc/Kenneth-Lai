@@ -41,7 +41,7 @@ export const Header = (props: HeaderProps): JSX.Element => {
   const SectionLinks = (): JSX.Element => {
     return (
       <div className="section-links">
-        <div id="title-mobile">KL</div>
+        <div id="title-initial">KL</div>
         {Object.values(SectionType).map((section) => (
           <SectionLink section={section} {...props} />
         ))}

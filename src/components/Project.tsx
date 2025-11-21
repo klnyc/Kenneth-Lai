@@ -33,9 +33,6 @@ export const Project = ({
         <img src={imgSrc} />
       </div>
       <div className="project-description">{description}</div>
-      <div className="project-technologies">
-        Tech stack: {techStack.join(", ")}
-      </div>
       <div className="project-links">
         <Link href={projectUrl} imgSrc="icons/link.svg" />
         <Link href={githubUrl} imgSrc="icons/github.svg" />

@@ -1,7 +1,7 @@
+import { Home } from "./Home";
 import { Travel } from "./Travel";
 import { Code } from "./Code";
 import { SectionType } from "../constants";
-import { Home } from "./Home";
 
 interface BodyProps {
   selectedSection: SectionType;

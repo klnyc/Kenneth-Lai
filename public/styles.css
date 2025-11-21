@@ -30,7 +30,7 @@ body {
 }
 
 #title,
-#title-mobile {
+#title-initial {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -41,7 +41,7 @@ body {
   flex: 1;
 }
 
-#title-mobile {
+#title-initial {
   display: none;
   padding: 0 8px 0 0;
 }
@@ -144,26 +144,12 @@ body {
 }
 
 .project-description {
-  height: 180px;
-}
-
-.project-description,
-.project-technologies {
+  height: 140px;
   padding: 16px;
   color: lightslategray;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.4px;
-}
-
-.project-description,
-.project-technologies {
-  font-size: 12px;
-}
-
-.project-technologies {
-  font-style: italic;
-  text-align: center;
-  height: 88px;
 }
 
 .project-links {
@@ -201,7 +187,7 @@ body {
   pointer-events: none;
 }
 
-.overlay {
+.photo-overlay {
   position: absolute;
   top: 8px;
   bottom: 8px;
@@ -212,11 +198,11 @@ body {
   background-color: #000000b8;
 }
 
-.photo:hover .overlay {
+.photo:hover .photo-overlay {
   opacity: 0.75;
 }
 
-.photo-text {
+.overlay-text {
   color: ghostwhite;
   font-size: 14px;
   position: absolute;
@@ -235,14 +221,14 @@ body {
   }
 
   #body {
-    margin-top: 120px;
+    margin-top: 120px; /* 56px (header height) + 2 x 32px (header padding) */
   }
 
   #title {
     display: none;
   }
 
-  #title-mobile {
+  #title-initial {
     display: initial;
     flex: 1;
   }
@@ -270,8 +256,7 @@ body {
     padding: 8px 24px;
   }
 
-  .project-description,
-  .project-technologies {
+  .project-description {
     height: auto;
   }
 
@@ -286,7 +271,7 @@ body {
     gap: 30px;
   }
 
-  .photo-text {
+  .overlay-text {
     font-size: 10px;
   }
 }

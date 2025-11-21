@@ -5,8 +5,8 @@ export const Travel = (): JSX.Element => {
     return (
       <div key={fileName} className="photo">
         <img src={`photos/${fileName}.jpg`} />
-        <div className="overlay">
-          <div className="photo-text">{text}</div>
+        <div className="photo-overlay">
+          <div className="overlay-text">{text}</div>
         </div>
       </div>
     );
