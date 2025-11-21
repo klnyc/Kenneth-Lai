@@ -81,22 +81,21 @@ body {
 }
 
 #code {
-  background-color: #eceef97a;
-  padding: 30px;
-  gap: 30px;
+  background-color: #000000b8;
+  padding: 24px;
+  gap: 24px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .project {
-  padding: 30px;
   border: 1px solid #888888;
   border-radius: 8px;
-  background-color: white;
+  background-color: ghostwhite;
+  width: 300px; /* matches image width */
 }
 
 .project-image {
-  padding: 10px 0;
   text-align: center;
   width: auto;
 }
@@ -104,33 +103,32 @@ body {
 .project-image img {
   height: 400px;
   width: 300px;
-  border-radius: 6px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .project-title {
   text-align: center;
-  padding-bottom: 8px;
+  font-size: 14px;
+  padding: 6px;
   letter-spacing: 2px;
 }
 
 .project-title a {
-  color: navy;
+  color: black;
 }
 
 .project-title a:hover {
-  color: #055c9d;
+  color: navy;
 }
 
 .project-description {
-  border-bottom: 1px solid dimgray;
-  height: 150px;
+  height: 180px;
 }
 
 .project-description,
 .project-technologies {
-  padding: 16px 0;
+  padding: 16px;
   color: lightslategray;
   line-height: 28px;
   letter-spacing: 0.4px;
