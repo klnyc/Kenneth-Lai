@@ -5,7 +5,7 @@ import { SectionType } from "../constants";
 
 export const App = (): JSX.Element => {
   const [selectedSection, setSelectedSection] = useState<SectionType>(
-    SectionType.CODE
+    SectionType.HOME
   );
 
   return (

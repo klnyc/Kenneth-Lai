@@ -86,6 +86,22 @@ body {
   background-color: #000000b8;
 }
 
+#home {
+  /* height of header (80px) so background image will fit without a y scrollbar */
+  height: calc(100vh - 80px);
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: linear-gradient(
+      black,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/photos/Tribute in Light (Bridge).jpg");
+}
+
 #code {
   gap: 24px;
   display: grid;
@@ -115,7 +131,7 @@ body {
 .project-title {
   text-align: center;
   font-size: 14px;
-  padding: 6px;
+  padding: 8px;
   letter-spacing: 2px;
 }
 
@@ -152,7 +168,7 @@ body {
 
 .project-links {
   text-align: center;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 .project-links img {
@@ -243,9 +259,15 @@ body {
     height: 16px;
   }
 
+  #home {
+    /* height of header (120px) so background image will fit without a y scrollbar */
+    height: calc(100vh - 120px);
+    padding: 0;
+  }
+
   .project {
     height: auto;
-    padding: 30px;
+    padding: 8px 24px;
   }
 
   .project-description,

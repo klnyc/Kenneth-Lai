@@ -1,6 +1,7 @@
 import { Travel } from "./Travel";
 import { Code } from "./Code";
 import { SectionType } from "../constants";
+import { Home } from "./Home";
 
 interface BodyProps {
   selectedSection: SectionType;
@@ -12,6 +13,8 @@ const Section = ({ selectedSection }: BodyProps): JSX.Element => {
       return <Travel />;
     case SectionType.CODE:
       return <Code />;
+    default:
+      return <Home />;
   }
 };
 

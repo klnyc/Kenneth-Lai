@@ -1,4 +1,5 @@
 export enum SectionType {
+  HOME = "Home",
   CODE = "Code",
   TRAVEL = "Travel",
 }
