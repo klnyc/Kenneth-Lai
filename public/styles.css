@@ -23,6 +23,12 @@ body {
   z-index: 1;
 }
 
+#body {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; /* 16px (header height) + 2 x 32px (header padding) */
+}
+
 #title,
 #title-mobile {
   font-size: 18px;
@@ -74,18 +80,17 @@ body {
   padding: 0 10px;
 }
 
-#code,
-#travel {
-  padding: 40px;
-  margin-top: 80px; /* 16px (header height) + 2 x 32px (header padding) */
+.section {
+  width: 100%;
+  padding: 24px;
+  background-color: #000000b8;
 }
 
 #code {
-  background-color: #000000b8;
-  padding: 24px;
   gap: 24px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
 }
 
 .project {
@@ -130,7 +135,7 @@ body {
 .project-technologies {
   padding: 16px;
   color: lightslategray;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: 0.4px;
 }
 
@@ -147,6 +152,7 @@ body {
 
 .project-links {
   text-align: center;
+  padding-bottom: 6px;
 }
 
 .project-links img {
@@ -156,10 +162,6 @@ body {
 
 .project-link {
   text-decoration: none;
-}
-
-#travel {
-  background-color: #000000b8;
 }
 
 #photo-grid {
@@ -214,6 +216,10 @@ body {
   #header {
     flex-direction: column;
     height: 56px;
+  }
+
+  #body {
+    margin-top: 120px;
   }
 
   #title {

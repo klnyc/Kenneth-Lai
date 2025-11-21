@@ -13,7 +13,7 @@ export const Travel = (): JSX.Element => {
   };
 
   return (
-    <div id="travel">
+    <div id="travel" className="section">
       <div id="photo-grid">
         {photos.map((row, index) => {
           return (
