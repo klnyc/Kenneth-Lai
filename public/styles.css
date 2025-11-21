@@ -12,14 +12,16 @@ body {
 
 #header {
   display: flex;
-  padding: 24px;
+  padding: 32px;
   margin: 0;
+  height: 16px;
+  font-size: 16px;
 }
 
 .title {
   flex: 1;
   letter-spacing: 2px;
-  font-size: 16px;
+  line-height: 16px;
 }
 
 .title-initials {
@@ -36,7 +38,7 @@ body {
 
 .section-links span {
   cursor: pointer;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 2px;
 }
 
@@ -45,16 +47,17 @@ body {
 }
 
 .section-link-selected {
-  color: #013de2;
+  color: navy;
 }
 
 .personal-links {
+  height: 100%;
   text-align: right;
   padding: 0 0 0 10px;
 }
 
 .personal-links img {
-  height: 18px;
+  height: 100%;
   padding: 0 10px;
 }
 
@@ -101,11 +104,11 @@ body {
 }
 
 .project-title a {
-  color: #013de2;
+  color: navy;
 }
 
 .project-title a:hover {
-  color: navy;
+  color: #055c9d;
 }
 
 .project-description {
@@ -200,7 +203,9 @@ body {
 @media only screen and (max-width: 960px) {
   #header {
     flex-direction: column;
+    height: 56px;
   }
+
   .title {
     display: none;
   }
@@ -208,8 +213,8 @@ body {
   .title-initials {
     display: initial;
     flex: 1;
+    line-height: 16px;
     letter-spacing: 2px;
-    font-size: 18px;
     padding: 0 8px 0 0;
   }
 
@@ -222,6 +227,7 @@ body {
   .personal-links {
     text-align: left;
     padding: 0;
+    height: 16px;
   }
 
   .project {
