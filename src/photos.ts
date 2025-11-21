@@ -7,7 +7,7 @@
 
 const photos: string[][][] = [
   [
-    ["Tribute in Light (Bridge)", "Tribute in light"],
+    ["LondonHouse (Bridges)", "Chicago"],
     ["Chinatown", "Chinatown"],
     ["Mongkok", "Mongkok"],
   ],
@@ -34,7 +34,7 @@ const photos: string[][][] = [
   [
     ["Verrazano Bridge", "Verrazano Bridge"],
     ["Dangsan (Balcony)", "Dangsan"],
-    ["Haneda Airport (Atrium)", "Haneda Airport"],
+    ["Hong Kong Airport Midfield Concourse (Entrance)", "Hong Kong Airport"],
   ],
 ];
 
