@@ -1,7 +1,7 @@
 @media only screen and (max-width: 960px) {
   #header {
     flex-direction: column;
-    height: 56px;
+    height: 56px; /* 24px (top row height) + 16px (top row bottom padding) + 16px (icon row height) */
   }
 
   #body {
@@ -42,6 +42,7 @@
 
   .project-description {
     height: auto;
+    padding: 16px 0;
   }
 
   #travel {

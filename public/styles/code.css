@@ -1,5 +1,5 @@
 #code {
-  gap: 24px;
+  gap: 32px; /* matches section padding */
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   place-content: center;
