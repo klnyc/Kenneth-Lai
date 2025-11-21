@@ -1,0 +1,15 @@
+#home {
+  /* height of header (80px) so background image will fit without a y scrollbar */
+  height: calc(100vh - 80px);
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: linear-gradient(
+      black,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/photos/Tribute in Light (Bridge).jpg");
+}

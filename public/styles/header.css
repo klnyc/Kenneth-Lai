@@ -1,0 +1,63 @@
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 32px;
+  margin: 0;
+  height: 16px;
+  width: 100%;
+  border-bottom: #888888 solid 1px;
+  background: ghostwhite;
+  z-index: 1;
+}
+
+#title,
+#title-initial {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#title {
+  flex: 1;
+}
+
+#title-initial {
+  display: none;
+  padding: 0 8px 0 0;
+}
+
+.section-links {
+  flex: 1;
+  text-align: right;
+  border-right: 1px solid black;
+  font-size: 14px;
+  padding: 0 8px 0 0;
+}
+
+.section-links span {
+  cursor: pointer;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-link {
+  padding: 0 16px;
+}
+
+.section-link-selected {
+  color: navy;
+}
+
+.personal-links {
+  height: 100%;
+  text-align: right;
+  padding: 0 0 0 10px;
+}
+
+.personal-links img {
+  height: 100%;
+  padding: 0 10px;
+}

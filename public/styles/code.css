@@ -1,0 +1,63 @@
+#code {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
+}
+
+.project {
+  border: 1px solid #888888;
+  border-radius: 8px;
+  background-color: ghostwhite;
+  width: 300px; /* matches image width */
+}
+
+.project-image {
+  text-align: center;
+  width: auto;
+}
+
+.project-image img {
+  height: 400px;
+  width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  letter-spacing: 2px;
+}
+
+.project-title a {
+  color: black;
+}
+
+.project-title a:hover {
+  color: navy;
+}
+
+.project-description {
+  height: 140px;
+  padding: 16px;
+  color: lightslategray;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.project-links {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.project-links img {
+  height: 16px;
+  padding: 6px 12px;
+}
+
+.project-link {
+  text-decoration: none;
+}

@@ -1,0 +1,47 @@
+#photo-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-row {
+  display: flex;
+}
+
+.photo {
+  flex: 1;
+  padding: 8px;
+  position: relative;
+}
+
+.photo img {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #000000b8;
+}
+
+.photo:hover .photo-overlay {
+  opacity: 0.75;
+}
+
+.overlay-text {
+  color: ghostwhite;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
