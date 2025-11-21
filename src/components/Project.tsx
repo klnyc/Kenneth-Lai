@@ -21,22 +21,22 @@ export const Project = ({
 }: ProjectProps): JSX.Element => {
   return (
     <div className="project">
-      <div className="project_title">
+      <div className="project-title">
         <Link
           href={projectUrl}
           imgSrc={imgSrc}
-          className="text-decoration-none"
+          className="project-link"
           text={name}
         />
       </div>
-      <div className="project_image">
+      <div className="project-image">
         <Link href={projectUrl} imgSrc={imgSrc} />
       </div>
-      <div className="project_description">{description}</div>
-      <div className="project_technologies">
+      <div className="project-description">{description}</div>
+      <div className="project-technologies">
         Tech stack: {techStack.join(", ")}
       </div>
-      <div className="project_links">
+      <div className="project-links">
         <Link href={projectUrl} imgSrc="icons/link.svg" />
         <Link href={githubUrl} imgSrc="icons/github.svg" />
         {youtubeUrl && <Link href={youtubeUrl} imgSrc="icons/youtube.svg" />}

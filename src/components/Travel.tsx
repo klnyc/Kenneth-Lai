@@ -6,7 +6,7 @@ export const Travel = (): JSX.Element => {
       <div key={fileName} className="photo">
         <img src={`photos/${fileName}.jpg`} />
         <div className="overlay">
-          <div className="photo_text">{text}</div>
+          <div className="photo-text">{text}</div>
         </div>
       </div>
     );
@@ -14,10 +14,10 @@ export const Travel = (): JSX.Element => {
 
   return (
     <div id="travel">
-      <div id="photo_grid">
+      <div id="photo-grid">
         {photos.map((row, index) => {
           return (
-            <div key={index} className="photo_row">
+            <div key={index} className="photo-row">
               {row.map(([fileName, text]) => renderPhoto(fileName, text))}
             </div>
           );

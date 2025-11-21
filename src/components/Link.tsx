@@ -13,7 +13,7 @@ export const Link = ({
     <a
       href={href}
       className={className}
-      target="_blank"
+      target="-blank"
       rel="noreferrer noopener"
     >
       {text || <img src={imgSrc} />}

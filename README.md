@@ -8,7 +8,6 @@ Technologies
 
 - Typescript
 - React
-- Bootstrap
 - Firebase
 - HTML
 - CSS
