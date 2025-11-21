@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Tahoma, sans-serif;
   background-color: ghostwhite;
   position: relative;
   letter-spacing: 0.2px;
@@ -15,17 +15,23 @@ body {
   padding: 32px;
   margin: 0;
   height: 16px;
-  font-size: 16px;
 }
 
-.title {
-  flex: 1;
+#title,
+#title-mobile {
+  font-size: 18px;
+  line-height: 18px;
   letter-spacing: 2px;
-  line-height: 16px;
+  text-transform: uppercase;
 }
 
-.title-initials {
+#title {
+  flex: 1;
+}
+
+#title-mobile {
   display: none;
+  padding: 0 8px 0 0;
 }
 
 .section-links {
@@ -40,6 +46,7 @@ body {
   cursor: pointer;
   line-height: 14px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .section-link {
@@ -206,16 +213,13 @@ body {
     height: 56px;
   }
 
-  .title {
+  #title {
     display: none;
   }
 
-  .title-initials {
+  #title-mobile {
     display: initial;
     flex: 1;
-    line-height: 16px;
-    letter-spacing: 2px;
-    padding: 0 8px 0 0;
   }
 
   .section-links {

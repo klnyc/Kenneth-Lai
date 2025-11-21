@@ -1,6 +1,6 @@
 export enum SectionType {
-  CODE = "CODE",
-  TRAVEL = "TRAVEL",
+  CODE = "Code",
+  TRAVEL = "Travel",
 }
 
 export const personalLinks: {

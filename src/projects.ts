@@ -3,7 +3,7 @@ import { ProjectProps } from "./components/Project";
 export const projects: ProjectProps[] = [
   {
     name: "iDestination",
-    description: `iDestination is a travel planning application that allows users to keep track of places 
+    description: `iDestination is a travel planning web application that allows users to keep track of places 
       that they have traveled to in the past and places that they plan to visit in the future. 
       Users can search, add, and filter locations on a map and view real-time weather of any city.`,
     imgSrc: "/screenshots/idestination.png",
@@ -24,7 +24,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Paper Rockets",
-    description: `Paper Rockets is a website for paper trading stocks in the U.S. stock market. 
+    description: `Paper Rockets is a web application for paper trading stocks in the U.S. stock market. 
       Users can buy/sell shares and track publicly traded companies in their watchlist.`,
     imgSrc: "/screenshots/paperrockets.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],

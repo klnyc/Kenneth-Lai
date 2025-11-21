@@ -41,7 +41,7 @@ export const Header = (props: HeaderProps): JSX.Element => {
   const SectionLinks = (): JSX.Element => {
     return (
       <div className="section-links">
-        <div className="title-initials">KL</div>
+        <div id="title-mobile">KL</div>
         {Object.values(SectionType).map((section) => (
           <SectionLink section={section} {...props} />
         ))}
@@ -51,7 +51,7 @@ export const Header = (props: HeaderProps): JSX.Element => {
 
   return (
     <div id="header">
-      <div className="title">KENNETH LAI</div>
+      <div id="title">Kenneth Lai</div>
       <SectionLinks />
       <PersonalLinks />
     </div>
