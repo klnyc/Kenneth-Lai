@@ -30,7 +30,7 @@ export const Project = ({
         />
       </div>
       <div className="project-image">
-        <Link href={projectUrl} imgSrc={imgSrc} />
+        <img src={imgSrc} />
       </div>
       <div className="project-description">{description}</div>
       <div className="project-technologies">
