@@ -17,6 +17,7 @@
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #title {

@@ -41,17 +41,29 @@ export const Header = (props: HeaderProps): JSX.Element => {
   const SectionLinks = (): JSX.Element => {
     return (
       <div className="section-links">
-        <div id="title-initial">KL</div>
-        {Object.values(SectionType).map((section) => (
-          <SectionLink section={section} {...props} key={section} />
-        ))}
+        <div
+          id="title-initial"
+          onClick={() => props.setSelectedSection(SectionType.HOME)}
+        >
+          KL
+        </div>
+        {Object.values(SectionType)
+          .filter((section) => section !== SectionType.HOME)
+          .map((section) => (
+            <SectionLink section={section} {...props} key={section} />
+          ))}
       </div>
     );
   };
 
   return (
     <div id="header">
-      <div id="title">Kenneth Lai</div>
+      <div
+        id="title"
+        onClick={() => props.setSelectedSection(SectionType.HOME)}
+      >
+        Kenneth Lai
+      </div>
       <SectionLinks />
       <PersonalLinks />
     </div>
