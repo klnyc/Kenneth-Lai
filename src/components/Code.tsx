@@ -5,7 +5,7 @@ export const Code = (): JSX.Element => {
   return (
     <div id="code" className="section">
       {projects.map((project) => (
-        <Project {...project} />
+        <Project {...project} key={project.name} />
       ))}
     </div>
   );

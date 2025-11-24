@@ -14,7 +14,7 @@ const PersonalLinks = (): JSX.Element => {
   return (
     <div className="personal-links">
       {personalLinks.map((link) => (
-        <Link href={link.url} imgSrc={link.imgSrc} />
+        <Link href={link.url} imgSrc={link.imgSrc} key={link.url} />
       ))}
     </div>
   );
@@ -43,7 +43,7 @@ export const Header = (props: HeaderProps): JSX.Element => {
       <div className="section-links">
         <div id="title-initial">KL</div>
         {Object.values(SectionType).map((section) => (
-          <SectionLink section={section} {...props} />
+          <SectionLink section={section} {...props} key={section} />
         ))}
       </div>
     );

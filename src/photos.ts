@@ -1,41 +1,37 @@
-// Photo structure
-// [
-//   [file name, display text],
-//   [file name, display text],
-//   [file name, display text],
-// ],
+export const photos: string[] = [
+  // 4 x 5
+  "Las Vegas.jpg",
+  "Singapore.jpg",
+  "Tokyo.jpg",
 
-const photos: string[][][] = [
-  [
-    ["LondonHouse (Bridges)", "Chicago"],
-    ["Chinatown", "Chinatown"],
-    ["Mongkok", "Mongkok"],
-  ],
-  [
-    ["Tokyo International Forum (Front)", "Tokyo International Forum"],
-    ["Incheon International Airport (Right)", "Incheon International Airport"],
-    ["Shinjuku (Street)", "Shinjuku"],
-  ],
-  [
-    ["Senso-Ji", "Senso-Ji"],
-    ["Dongdaemun Design Plaza (Outdoors)", "Dongdaemun Design Plaza"],
-    ["Dangsan (Station)", "Dangsan"],
-  ],
-  [
-    ["FDR Drive", "FDR Drive"],
-    ["Weehawken", "Weehawken"],
-    ["JFK Airport", "JFK Airport"],
-  ],
-  [
-    ["North Avenue Beach", "North Avenue Beach"],
-    ["Shibuya (109)", "Shibuya"],
-    ["Shinjuku (Viaduct)", "Shinjuku"],
-  ],
-  [
-    ["Verrazano Bridge", "Verrazano Bridge"],
-    ["Dangsan (Balcony)", "Dangsan"],
-    ["Hong Kong Airport Midfield Concourse (Entrance)", "Hong Kong Airport"],
-  ],
+  "Miami.jpg",
+  "Boston.jpg",
+  "Anaheim.jpg",
+
+  "Atlantic City.jpg",
+  "Osaka.jpg",
+  "Denver.jpg",
+
+  "New York City.jpg",
+
+  // 1 x 1
+
+  "Hong Kong.jpg",
+  "Los Angeles.jpg",
+
+  "Montreal.jpg",
+  "Seattle.jpg",
+  "Seoul.jpg",
+
+  "Chicago.jpg",
+
+  // 5 x 4
+  "London.jpg",
+  "Thailand.jpg",
+
+  "Taiwan.jpg",
+  "Toronto.jpg",
+  "San Francisco.jpg",
+  
+  "Philadelphia.jpg",
 ];
-
-export default photos;
