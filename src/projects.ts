@@ -3,7 +3,7 @@ import { ProjectProps } from "./components/Project";
 export const projects: ProjectProps[] = [
   {
     name: "iDestination",
-    description: `iDestination is a travel planning web application that allows users to keep track of places 
+    description: `Travel planning web application that allows users to keep track of places 
       that they have traveled to in the past and places that they plan to visit in the future. 
       Users can search, add, and filter locations on a map and view real-time weather of any city.`,
     imgSrc: "/screenshots/idestination.png",
@@ -24,7 +24,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Paper Rockets",
-    description: `Paper Rockets is a web application for paper trading stocks in the U.S. stock market. 
+    description: `Web application for paper trading stocks in the U.S. stock market. 
       Users can buy/sell shares and track publicly traded companies in their watchlist.`,
     imgSrc: "/screenshots/paperrockets.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
@@ -33,7 +33,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "WeOut",
-    description: `WeOut is an instant messaging application that allows users to
+    description: `Instant messaging application that allows users to
       create chatrooms and talk with friends, family, and community members.`,
     imgSrc: "/screenshots/weout.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
@@ -42,7 +42,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Jukebox Center",
-    description: `Jukebox Center is an e-commerce website that sells music albums.
+    description: `E-commerce website that sells music albums.
       Users can filter albums by genre, add albums to their cart to
       checkout as a user or guest, and view their order history.`,
     imgSrc: "/screenshots/jukeboxcenter.png",
@@ -63,7 +63,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Sudoku",
-    description: `Sudoku is a number-placement puzzle. 
+    description: `Number-placement puzzle. 
       The goal is to fill the 9x9 grid with digits so that 
       each column, each row, and each of the nine 3x3 subgrids 
       contain all of the digits from 1 to 9 exactly once.`,
@@ -79,7 +79,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Ball Drop",
-    description: `Ball Drop is a game where you try to catch every falling ball. 
+    description: `In this game, try to catch every falling ball. 
       The basket follows your mouse movements and the ball drops faster after every successful catch.`,
     imgSrc: "/screenshots/balldrop.png",
     techStack: [
