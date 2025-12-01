@@ -33,8 +33,8 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "WeOut",
-    description: `Instant messaging application that allows users to
-      create chatrooms and talk with friends, family, and community members.`,
+    description: `Fully responsive instant messaging application that allows users to
+      create chatrooms to message friends and family.`,
     imgSrc: "/screenshots/weout.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
     projectUrl: "https://weout.web.app/",
