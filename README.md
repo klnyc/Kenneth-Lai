@@ -18,4 +18,4 @@ https://kennethlai.web.app/
 
 Run `npm run build` or `yarn build`, then `firebase deploy`.
 
-Code project screenshots are taken on iPad Mini dimensions.
+Code project screenshots are taken on iPad Mini dimensions, resized scaled proportionally to 640px x 640px.
