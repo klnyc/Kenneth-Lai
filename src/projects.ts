@@ -24,7 +24,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Paper Rockets",
-    description: `Web application for paper trading stocks in the U.S. stock market. 
+    description: `Fully responsive web application for paper trading stocks in the U.S. stock market. 
       Users can buy/sell shares and track publicly traded companies in their watchlist.`,
     imgSrc: "/screenshots/paperrockets.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
