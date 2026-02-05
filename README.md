@@ -9,6 +9,7 @@ Technologies
 - Typescript
 - React
 - Firebase
+- Webpack
 - HTML
 - CSS
 

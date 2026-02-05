@@ -41,27 +41,6 @@ export const projects: ProjectProps[] = [
     githubUrl: "https://github.com/klnyc/WeOut",
   },
   {
-    name: "Jukebox Center",
-    description: `E-commerce website that sells music albums.
-      Users can filter albums by genre, add albums to their cart to
-      checkout as a user or guest, and view their order history.`,
-    imgSrc: "/screenshots/jukeboxcenter.png",
-    techStack: [
-      "JavaScript",
-      "React",
-      "Redux",
-      "Express",
-      "PostgreSQL",
-      "Sequelize",
-      "Webpack",
-      "Heroku",
-      "HTML",
-      "CSS",
-    ],
-    projectUrl: "https://github.com/klnyc/JukeboxCenter",
-    githubUrl: "https://github.com/klnyc/JukeboxCenter",
-  },
-  {
     name: "Sudoku",
     description: `Number-placement puzzle. 
       The goal is to fill the 9x9 grid with digits so that 

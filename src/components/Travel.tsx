@@ -1,31 +1,31 @@
 import { useState } from "react";
 import { photos } from "../photos";
 
-interface PhotoProps {
-  fileName: string;
-}
-
-const Photo = ({ fileName }: PhotoProps): JSX.Element => {
-  const [loading, setLoading] = useState(true);
-
-  return (
-    <div key={fileName} className="photo">
-      {loading && <div className="photo-skeleton"></div>}
-
-      <img src={`photos/${fileName}`} onLoad={() => setLoading(false)} />
-      <div className="photo-overlay">
-        <div className="overlay-text">{fileName.split(".")[0]}</div>
-      </div>
-    </div>
-  );
-};
-
 export const Travel = (): JSX.Element => {
+  const [loadedCount, setLoadedCount] = useState(0);
+
+  const handleImageLoad = () => {
+    setLoadedCount((count) => count + 1);
+  };
+
+  const photosLoaded = loadedCount === photos.length;
+
   return (
     <div id="travel" className="section">
-      <div id="photo-grid">
+      {!photosLoaded && <div className="spinner"></div>}
+
+      <div id="photo-grid" className={photosLoaded ? "show" : ""}>
         {photos.map((fileName) => (
-          <Photo fileName={fileName} />
+          <div key={fileName} className="photo">
+            <img
+              src={`photos/${fileName}`}
+              onLoad={handleImageLoad}
+              onError={handleImageLoad}
+            />
+            <div className="photo-overlay">
+              <div className="overlay-text">{fileName.split(".")[0]}</div>
+            </div>
+          </div>
         ))}
       </div>
     </div>
