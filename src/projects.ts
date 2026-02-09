@@ -41,34 +41,11 @@ export const projects: ProjectProps[] = [
     githubUrl: "https://github.com/klnyc/WeOut",
   },
   {
-    name: "Sudoku",
-    description: `Number-placement puzzle. 
-      The goal is to fill the 9x9 grid with digits so that 
-      each column, each row, and each of the nine 3x3 subgrids 
-      contain all of the digits from 1 to 9 exactly once.`,
-    imgSrc: "sudoku.png",
-    techStack: [
-      "JavaScript",
-      "React",
-      "HTML",
-      "CSS",
-    ],
-    projectUrl: "https://klnyc.github.io/Sudoku/",
-    githubUrl: "https://github.com/klnyc/Sudoku",
-  },
-  {
-    name: "Ball Drop",
-    description: `In this game, try to catch every falling ball. 
-      The basket follows your mouse movements and the ball drops faster after every successful catch.`,
+    name: "Playbox",
+    description: `A collection of mini web games such as Ball Drop and Sudoku.`,
     imgSrc: "balldrop.png",
-    techStack: [
-      "JavaScript",
-      "React",
-      "Vite",
-      "HTML",
-      "CSS",
-    ],
-    projectUrl: "https://klnyc.github.io/Ball-Drop/",
-    githubUrl: "https://github.com/klnyc/Ball-Drop",
+    techStack: ["Typescript", "React", "Vite", "CSS"],
+    projectUrl: "https://klnyc.github.io/Playbox/",
+    githubUrl: "https://github.com/klnyc/Playbox",
   },
 ];

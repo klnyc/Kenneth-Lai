@@ -8,10 +8,10 @@ Technologies
 
 - Typescript
 - React
-- Firebase
 - Webpack
 - HTML
 - CSS
+- Firebase
 
 ## :rocket: Deployment
 
