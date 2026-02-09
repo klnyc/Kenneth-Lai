@@ -42,7 +42,7 @@ export const projects: ProjectProps[] = [
   },
   {
     name: "Playbox",
-    description: `A collection of mini web games such as Ball Drop and Sudoku.`,
+    description: `A collection of mini web games, including Ball Drop and Sudoku.`,
     imgSrc: "balldrop.png",
     techStack: ["Typescript", "React", "Vite", "CSS"],
     projectUrl: "https://klnyc.github.io/Playbox/",
