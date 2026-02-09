@@ -1,3 +1,8 @@
+import GitHubIcon from "./assets/icons/github.svg";
+import YouTubeIcon from "./assets/icons/youtube.svg";
+import LinkedInIcon from "./assets/icons/linkedin.svg";
+import InstagramIcon from "./assets/icons/instagram.svg";
+
 export enum SectionType {
   HOME = "Home",
   CODE = "Code",
@@ -10,18 +15,18 @@ export const personalLinks: {
 }[] = [
   {
     url: "https://www.linkedin.com/in/kennethklai/",
-    imgSrc: "icons/linkedin.svg",
+    imgSrc: LinkedInIcon,
   },
   {
     url: "https://github.com/klnyc",
-    imgSrc: "icons/github.svg",
+    imgSrc: GitHubIcon,
   },
   {
     url: "https://www.instagram.com/kl.nyc/",
-    imgSrc: "icons/instagram.svg",
+    imgSrc: InstagramIcon,
   },
   {
     url: "https://www.youtube.com/watch?v=49xpx7a_prY",
-    imgSrc: "icons/youtube.svg",
+    imgSrc: YouTubeIcon,
   },
 ];

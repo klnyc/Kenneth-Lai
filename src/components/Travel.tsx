@@ -18,7 +18,8 @@ export const Travel = (): JSX.Element => {
         {photos.map((fileName) => (
           <div key={fileName} className="photo">
             <img
-              src={`photos/${fileName}`}
+              src={require(`../assets/photos/${fileName}`)}
+              alt={fileName}
               onLoad={handleImageLoad}
               onError={handleImageLoad}
             />

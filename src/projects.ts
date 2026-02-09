@@ -6,7 +6,7 @@ export const projects: ProjectProps[] = [
     description: `Travel planning web application that allows users to keep track of places 
       that they have traveled to in the past and places that they plan to visit in the future. 
       Users can search, add, and filter locations on a map and view real-time weather of any city.`,
-    imgSrc: "/screenshots/idestination.png",
+    imgSrc: "idestination.png",
     techStack: [
       "JavaScript",
       "React",
@@ -26,7 +26,7 @@ export const projects: ProjectProps[] = [
     name: "Paper Rockets",
     description: `Fully responsive web application for paper trading stocks in the U.S. stock market. 
       Users can buy/sell shares and track publicly traded companies in their watchlist.`,
-    imgSrc: "/screenshots/paperrockets.png",
+    imgSrc: "paperrockets.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
     projectUrl: "https://paperrockets.web.app/",
     githubUrl: "https://github.com/klnyc/Paper-Rockets",
@@ -35,7 +35,7 @@ export const projects: ProjectProps[] = [
     name: "WeOut",
     description: `Fully responsive instant messaging application that allows users to
       create chatrooms to message friends and family.`,
-    imgSrc: "/screenshots/weout.png",
+    imgSrc: "weout.png",
     techStack: ["JavaScript", "React", "Firebase", "Sass", "Bootstrap", "HTML"],
     projectUrl: "https://weout.web.app/",
     githubUrl: "https://github.com/klnyc/WeOut",
@@ -46,7 +46,7 @@ export const projects: ProjectProps[] = [
       The goal is to fill the 9x9 grid with digits so that 
       each column, each row, and each of the nine 3x3 subgrids 
       contain all of the digits from 1 to 9 exactly once.`,
-    imgSrc: "/screenshots/sudoku.png",
+    imgSrc: "sudoku.png",
     techStack: [
       "JavaScript",
       "React",
@@ -60,7 +60,7 @@ export const projects: ProjectProps[] = [
     name: "Ball Drop",
     description: `In this game, try to catch every falling ball. 
       The basket follows your mouse movements and the ball drops faster after every successful catch.`,
-    imgSrc: "/screenshots/balldrop.png",
+    imgSrc: "balldrop.png",
     techStack: [
       "JavaScript",
       "React",

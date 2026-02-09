@@ -1,4 +1,7 @@
 import { Link } from "./Link";
+import GitHubIcon from "../assets/icons/github.svg";
+import LinkIcon from "../assets/icons/link.svg";
+import YouTubeIcon from "../assets/icons/youtube.svg";
 
 export interface ProjectProps {
   name: string;
@@ -21,21 +24,16 @@ export const Project = ({
   return (
     <div className="project">
       <div className="project-image">
-        <img src={imgSrc} />
+        <img src={require(`../assets/screenshots/${imgSrc}`)} />
       </div>
       <div className="project-title">
-        <Link
-          href={projectUrl}
-          imgSrc={imgSrc}
-          className="project-link"
-          text={name}
-        />
+        <Link href={projectUrl} className="project-link" text={name} />
       </div>
       <div className="project-description">{description}</div>
       <div className="project-links">
-        <Link href={projectUrl} imgSrc="icons/link.svg" />
-        <Link href={githubUrl} imgSrc="icons/github.svg" />
-        {youtubeUrl && <Link href={youtubeUrl} imgSrc="icons/youtube.svg" />}
+        <Link href={projectUrl} imgSrc={LinkIcon} />
+        <Link href={githubUrl} imgSrc={GitHubIcon} />
+        {youtubeUrl && <Link href={youtubeUrl} imgSrc={YouTubeIcon} />}
       </div>
     </div>
   );
