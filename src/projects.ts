@@ -4,7 +4,7 @@ export const projects: ProjectProps[] = [
   {
     name: "iDestination",
     description: `Travel planning web application that allows users to keep track of places 
-      that they have traveled to in the past and places that they plan to visit in the future. 
+      that they have been to and places they plan to visit. 
       Users can search, add, and filter locations on a map and view real-time weather of any city.`,
     imgSrc: "idestination.png",
     techStack: [
