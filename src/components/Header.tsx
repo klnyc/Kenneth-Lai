@@ -1,4 +1,5 @@
-import { Link } from "./Link";
+import { Link } from "react-router";
+import { ExternalLink } from "./ExternalLink";
 import { SectionType, personalLinks } from "../constants";
 
 interface HeaderProps {
@@ -14,7 +15,7 @@ const PersonalLinks = (): JSX.Element => {
   return (
     <div className="personal-links">
       {personalLinks.map((link) => (
-        <Link href={link.url} imgSrc={link.imgSrc} key={link.url} />
+        <ExternalLink href={link.url} imgSrc={link.imgSrc} key={link.url} />
       ))}
     </div>
   );
@@ -26,14 +27,18 @@ const SectionLink = ({
   setSelectedSection,
 }: SectionLinkProps): JSX.Element => {
   return (
-    <span
-      className={`section-link ${
-        section === selectedSection ? "section-link-selected" : ""
-      }`}
-      onClick={() => setSelectedSection(section)}
+    <Link
+      to={`${section === SectionType.HOME ? "/" : `/${section.toLowerCase()}`}`}
     >
-      {section}
-    </span>
+      <button
+        className={`section-link ${
+          section === selectedSection && "section-link-selected"
+        }`}
+        onClick={() => setSelectedSection(section)}
+      >
+        {section}
+      </button>
+    </Link>
   );
 };
 
@@ -41,12 +46,15 @@ export const Header = (props: HeaderProps): JSX.Element => {
   const SectionLinks = (): JSX.Element => {
     return (
       <div className="section-links">
-        <div
-          id="title-initial"
-          onClick={() => props.setSelectedSection(SectionType.HOME)}
-        >
-          KL
-        </div>
+        <Link to="/">
+          <button
+            id="title-initial"
+            onClick={() => props.setSelectedSection(SectionType.HOME)}
+          >
+            KL
+          </button>
+        </Link>
+
         {Object.values(SectionType)
           .filter((section) => section !== SectionType.HOME)
           .map((section) => (
@@ -58,12 +66,14 @@ export const Header = (props: HeaderProps): JSX.Element => {
 
   return (
     <div id="header">
-      <div
-        id="title"
-        onClick={() => props.setSelectedSection(SectionType.HOME)}
-      >
-        Kenneth Lai
-      </div>
+      <Link to="/">
+        <button
+          id="title"
+          onClick={() => props.setSelectedSection(SectionType.HOME)}
+        >
+          Kenneth Lai
+        </button>
+      </Link>
       <SectionLinks />
       <PersonalLinks />
     </div>

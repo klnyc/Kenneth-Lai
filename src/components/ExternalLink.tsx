@@ -1,4 +1,4 @@
-export const Link = ({
+export const ExternalLink = ({
   href,
   text,
   imgSrc,

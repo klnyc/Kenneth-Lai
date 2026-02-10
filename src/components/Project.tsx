@@ -1,4 +1,4 @@
-import { Link } from "./Link";
+import { ExternalLink } from "./ExternalLink";
 import GitHubIcon from "../assets/icons/github.svg";
 import LinkIcon from "../assets/icons/link.svg";
 import YouTubeIcon from "../assets/icons/youtube.svg";
@@ -27,13 +27,13 @@ export const Project = ({
         <img src={require(`../assets/screenshots/${imgSrc}`)} />
       </div>
       <div className="project-title">
-        <Link href={projectUrl} className="project-link" text={name} />
+        <ExternalLink href={projectUrl} className="project-link" text={name} />
       </div>
       <div className="project-description">{description}</div>
       <div className="project-links">
-        <Link href={projectUrl} imgSrc={LinkIcon} />
-        <Link href={githubUrl} imgSrc={GitHubIcon} />
-        {youtubeUrl && <Link href={youtubeUrl} imgSrc={YouTubeIcon} />}
+        <ExternalLink href={projectUrl} imgSrc={LinkIcon} />
+        <ExternalLink href={githubUrl} imgSrc={GitHubIcon} />
+        {youtubeUrl && <ExternalLink href={youtubeUrl} imgSrc={YouTubeIcon} />}
       </div>
     </div>
   );

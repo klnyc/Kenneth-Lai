@@ -10,14 +10,19 @@ body {
   letter-spacing: 0.2px;
 }
 
-#body {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px; /* 16px (header height) + 2 x 32px (header padding) */
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 .section {
-  width: 100%;
+  margin-top: 64px; /* 16px (header height) + 2 x 24px (header padding) */
+  /* width: 100%; */
   padding: 32px;
 }
 
