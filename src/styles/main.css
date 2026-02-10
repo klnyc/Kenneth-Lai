@@ -22,7 +22,6 @@ a:-webkit-any-link {
 
 .section {
   margin-top: 64px; /* 16px (header height) + 2 x 24px (header padding) */
-  /* width: 100%; */
   padding: 32px;
 }
 

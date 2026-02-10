@@ -58,4 +58,8 @@
   .overlay-text {
     font-size: 10px;
   }
+
+  #photo-grid {
+    grid-template-columns: auto auto;
+  }
 }
