@@ -2,6 +2,14 @@ import { ProjectProps } from "./components/Project";
 
 export const projects: ProjectProps[] = [
   {
+    name: "Metrowave",
+    description: `Fully responsive travel photography portfolio online shop for sharing and selling cityscape and urban design prints.`,
+    imgSrc: "metrowave.png",
+    techStack: ["Typescript", "React", "Vite", "Radix UI", "Firebase", "CSS"],
+    projectUrl: "https://metrowave.web.app/",
+    githubUrl: "https://github.com/klnyc/Metrowave",
+  },
+  {
     name: "iDestination",
     description: `Travel planning web application that allows users to keep track of places 
       that they have been to and places they plan to visit. 
