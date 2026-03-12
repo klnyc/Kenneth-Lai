@@ -6,7 +6,8 @@ import InstagramIcon from "./assets/icons/instagram.svg";
 export enum SectionType {
   HOME = "Home",
   CODE = "Code",
-  TRAVEL = "Travel",
+  // TRAVEL = "Travel",
+  ABOUT = "About",
 }
 
 export const personalLinks: {

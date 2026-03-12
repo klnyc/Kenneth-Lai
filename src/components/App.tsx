@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { Header } from "./Header";
 import { Home } from "./Home";
 import { Code } from "./Code";
-import { Travel } from "./Travel";
+import { About } from "./About";
 import { SectionType } from "../constants";
 
 export const App = (): JSX.Element => {
@@ -21,7 +21,7 @@ export const App = (): JSX.Element => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/code" element={<Code />} />
-          <Route path="/travel" element={<Travel />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>

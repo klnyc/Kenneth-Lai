@@ -3,9 +3,20 @@ import { ProjectProps } from "./components/Project";
 export const projects: ProjectProps[] = [
   {
     name: "Metrowave",
-    description: `Fully responsive travel photography portfolio online shop for sharing and selling cityscape and urban design prints.`,
+    description: `Fully responsive online shop for selling 
+      cityscape and urban design wall art decor and prints. 
+      Integrated with Stripe for payment processing and supports light and dark mode.
+      All photos are original and taken by me.`,
     imgSrc: "metrowave.png",
-    techStack: ["Typescript", "React", "Vite", "Radix UI", "Firebase", "CSS"],
+    techStack: [
+      "Typescript",
+      "React",
+      "Vite",
+      "Radix UI",
+      "Firebase",
+      "CSS",
+      "Stripe",
+    ],
     projectUrl: "https://metrowave.web.app/",
     githubUrl: "https://github.com/klnyc/Metrowave",
   },
